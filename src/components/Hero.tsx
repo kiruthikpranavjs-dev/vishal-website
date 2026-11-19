@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Download, ChevronDown, CheckCircle2, MapPin, Award, ShieldCheck } from 'lucide-react';
+import { ArrowRight, Download, ChevronDown, CheckCircle2 } from 'lucide-react';
 import { FACTORY_INFO } from '../data/factoryData';
 
 interface HeroProps {
@@ -11,48 +11,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAuditModal, onOpenInquiryModal
   return (
     <section id="hero" className="relative bg-transparent border-b border-stone-200 overflow-hidden">
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 sm:pt-16 pb-16 lg:pb-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 sm:pt-10 pb-16 lg:pb-24">
         
-        {/* Top Eyebrow Badges: Small & Horizontally Next to Each Other on All Screens */}
-        <div className="grid grid-cols-3 gap-2 sm:gap-3 max-w-3xl mb-6 sm:mb-8">
-          <div className="flex items-center gap-1.5 sm:gap-2.5 border border-stone-300 bg-white/85 px-2 py-1.5 sm:px-3.5 sm:py-2.5 rounded-lg shadow-2xs min-w-0">
-            <MapPin className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0 text-stone-600" strokeWidth={1.8} />
-            <div className="min-w-0 flex-1">
-              <div className="text-[7.5px] sm:text-[9px] font-bold uppercase tracking-wider text-stone-500 truncate">Manufacturing base</div>
-              <div className="mt-0.5 text-[9.5px] sm:text-xs font-semibold tracking-wide text-stone-900 truncate">
-                <span className="hidden sm:inline">Tiruppur, TN, India</span>
-                <span className="sm:hidden">Tiruppur, India</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-1.5 sm:gap-2.5 border border-stone-300 bg-white/85 px-2 py-1.5 sm:px-3.5 sm:py-2.5 rounded-lg shadow-2xs min-w-0">
-            <Award className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0 text-[#A77B36]" strokeWidth={1.8} />
-            <div className="min-w-0 flex-1">
-              <div className="text-[7.5px] sm:text-[9px] font-bold uppercase tracking-wider text-stone-500 truncate">Industry experience</div>
-              <div className="mt-0.5 text-[9.5px] sm:text-xs font-semibold tracking-wide text-stone-900 truncate">
-                <span className="hidden sm:inline">18+ years in mfg</span>
-                <span className="sm:hidden">18+ years</span>
-              </div>
-            </div>
-          </div>
-
-          <button
-            type="button"
-            onClick={onOpenAuditModal}
-            className="flex items-center gap-1.5 sm:gap-2.5 border border-stone-300 bg-white/85 hover:bg-white px-2 py-1.5 sm:px-3.5 sm:py-2.5 rounded-lg shadow-2xs min-w-0 text-left transition-colors cursor-pointer"
-          >
-            <ShieldCheck className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0 text-emerald-600" strokeWidth={2} />
-            <div className="min-w-0 flex-1">
-              <div className="text-[7.5px] sm:text-[9px] font-bold uppercase tracking-wider text-stone-500 truncate">Compliance audit</div>
-              <div className="mt-0.5 text-[9.5px] sm:text-xs font-semibold tracking-wide text-stone-900 truncate">
-                <span className="hidden sm:inline">SMETA 4-Pillar · LRQA</span>
-                <span className="sm:hidden">SMETA 4-Pillar</span>
-              </div>
-            </div>
-          </button>
-        </div>
-
         {/* Hero Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           
