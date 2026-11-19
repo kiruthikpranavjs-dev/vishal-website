@@ -41,7 +41,7 @@ export function App() {
       />
 
       {/* MAIN WEBSITE SECTIONS */}
-      <main className="flex-1 pt-[54px] sm:pt-[58px] lg:pt-[82px]">
+      <main className="flex-1 pt-[78px] sm:pt-[82px] lg:pt-[84px]">
         
         {/* SECTION 2: HERO EXPERIENCE */}
         <Hero

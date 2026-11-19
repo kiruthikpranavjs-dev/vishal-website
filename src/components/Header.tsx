@@ -31,15 +31,30 @@ export const Header: React.FC<HeaderProps> = ({ onOpenAuditModal, onOpenInquiryM
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 w-full transition-all duration-300">
-      {/* Top Pre-Header Utility Bar (Desktop only) */}
-      <div className="bg-[#261A13] text-stone-300 text-[10px] px-4 py-1.5 border-b border-stone-800/80 hidden lg:block">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <span className="font-mono text-stone-400 tracking-wide">
-            Tiruppur Knitted Garment Manufacturing & Apparel Export · Vertically Integrated Plant
-          </span>
+      {/* Top Pre-Header Mini Bar: Base & Experience Only */}
+      <div className="bg-[#261A13] text-stone-300 text-[10px] sm:text-[11px] px-3 sm:px-6 py-1.5 border-b border-stone-800/80">
+        <div className="max-w-7xl mx-auto flex items-center justify-between gap-x-4">
+          
+          <div className="flex items-center space-x-3 sm:space-x-5 text-stone-200">
+            {/* 1. Manufacturing Base */}
+            <span className="flex items-center space-x-1.5 whitespace-nowrap">
+              <MapPin className="h-3 w-3 sm:h-3.5 sm:w-3.5 shrink-0 text-[#E08A5E]" />
+              <span className="text-stone-400 font-medium hidden sm:inline">Manufacturing Base:</span>
+              <span className="font-semibold text-white">Tiruppur, Tamil Nadu, India</span>
+            </span>
 
-          {/* Right Direct Merchandising Line */}
-          <div className="flex shrink-0 items-center space-x-4">
+            <span className="text-stone-700">|</span>
+
+            {/* 2. Industry Experience */}
+            <span className="flex items-center space-x-1.5 whitespace-nowrap">
+              <Award className="h-3 w-3 sm:h-3.5 sm:w-3.5 shrink-0 text-amber-400" />
+              <span className="text-stone-400 font-medium hidden sm:inline">Industry Experience:</span>
+              <span className="font-semibold text-white">18+ Years in Manufacturing</span>
+            </span>
+          </div>
+
+          {/* Right Direct Merchandising Line (Large Screens) */}
+          <div className="hidden lg:flex shrink-0 items-center space-x-4 text-[10px]">
             <a 
               href={`mailto:${FACTORY_INFO.email}`} 
               className="flex items-center space-x-1.5 whitespace-nowrap text-stone-300 hover:text-white transition-colors"
@@ -75,7 +90,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenAuditModal, onOpenInquiryM
             <BrandLogo variant="light" size="sm" />
           </a>
 
-          {/* Right Desktop Nav Links */}
+          {/* Center Desktop Nav Links */}
           <div className="hidden lg:flex items-center space-x-4 xl:space-x-6 text-[11px] xl:text-xs font-extrabold text-stone-900 uppercase tracking-wider">
             {navLinks.map((item) => (
               <a 
@@ -88,8 +103,18 @@ export const Header: React.FC<HeaderProps> = ({ onOpenAuditModal, onOpenInquiryM
             ))}
           </div>
 
-          {/* Action Button: ENQUIRE NOW */}
+          {/* Desktop Right: Certificate Badge + ENQUIRE NOW Button inside Menu Bar */}
           <div className="hidden sm:flex items-center space-x-3">
+            <button
+              type="button"
+              onClick={onOpenAuditModal}
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-emerald-50/90 hover:bg-emerald-100 text-emerald-800 border border-emerald-300 text-xs font-bold transition-all cursor-pointer shadow-2xs hover:shadow-xs active:scale-95"
+              title="Click to view full SMETA 4-Pillar LRQA Audit Dossier"
+            >
+              <ShieldCheck className="w-4 h-4 text-emerald-600 shrink-0" strokeWidth={2.2} />
+              <span>SMETA 4-Pillar · LRQA Audited</span>
+            </button>
+
             <button
               onClick={onOpenInquiryModal}
               className="enquire-cloth-button px-4 py-2 text-[11px] font-bold tracking-[0.12em] uppercase rounded-lg transition-all cursor-pointer active:scale-95"
@@ -98,8 +123,18 @@ export const Header: React.FC<HeaderProps> = ({ onOpenAuditModal, onOpenInquiryM
             </button>
           </div>
 
-          {/* Mobile Hamburger Toggle */}
+          {/* Mobile Right: Certificate Badge + Enquire + Hamburger inside Menu Bar */}
           <div className="lg:hidden flex items-center space-x-2">
+            <button
+              type="button"
+              onClick={onOpenAuditModal}
+              className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-emerald-50/95 hover:bg-emerald-100 text-emerald-800 border border-emerald-300 shadow-2xs text-[10px] font-bold tracking-tight transition-all cursor-pointer active:scale-95"
+              title="View SMETA 4-Pillar LRQA Audit Dossier"
+            >
+              <ShieldCheck className="w-3.5 h-3.5 text-emerald-600 shrink-0" strokeWidth={2.2} />
+              <span>SMETA 4-Pillar · LRQA</span>
+            </button>
+
             <button
               onClick={onOpenInquiryModal}
               className="sm:hidden px-3 py-1.5 text-[11px] font-bold uppercase tracking-wider text-white bg-[#93452E] rounded-md"
