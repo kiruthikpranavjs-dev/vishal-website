@@ -76,7 +76,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAuditModal, onOpenInquiryModal
               </div>
               <div className="flex items-center space-x-2.5">
                 <CheckCircle2 className="w-4 h-4 text-[#93452E] shrink-0" />
-                <span>Akshera Knit Dyers (100% ZLD Water Recovery)</span>
+                <span>In-House Eco Dyeing (100% ZLD Water Recovery)</span>
               </div>
               <div className="flex items-center space-x-2.5">
                 <CheckCircle2 className="w-4 h-4 text-[#93452E] shrink-0" />
@@ -180,7 +180,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAuditModal, onOpenInquiryModal
                 100% ZLD
               </div>
               <div className="text-[11px] uppercase tracking-wider text-stone-400 font-medium">
-                Akshera Water Recovery
+                Closed-Loop Water Recovery
               </div>
             </div>
 

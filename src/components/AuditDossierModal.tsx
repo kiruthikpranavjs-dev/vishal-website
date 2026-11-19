@@ -125,7 +125,7 @@ export const AuditDossierModal: React.FC<AuditDossierModalProps> = ({ isOpen, on
                   <span>3. Environment 4-Pillar</span>
                 </div>
                 <p className="text-[11px] text-stone-600 leading-relaxed pl-6">
-                  Zero Liquid Discharge (ZLD) wet processing at Akshera Knit Dyers. 100% water recovery with zero effluent.
+                  Zero Liquid Discharge (ZLD) eco wet processing. 100% water recovery with zero toxic effluent discharge.
                 </p>
               </div>
 
@@ -141,11 +141,11 @@ export const AuditDossierModal: React.FC<AuditDossierModalProps> = ({ isOpen, on
             </div>
           </div>
 
-          {/* Akshera ZLD Callout */}
+          {/* ZLD Callout */}
           <div className="p-4 rounded-2xl bg-emerald-50 border border-emerald-200 text-xs text-emerald-900 space-y-1.5">
             <div className="flex items-center space-x-2 font-bold">
               <Droplets className="w-4 h-4 text-emerald-700" />
-              <span>Own Wet Processing Unit: Akshera Knit Dyers Processes</span>
+              <span>Own Wet Processing Unit: Zero Liquid Discharge (ZLD)</span>
             </div>
             <p className="text-emerald-800 leading-relaxed">
               Equipped with state-of-the-art biological treatment, ultrafiltration, reverse osmosis, and thermal evaporators. 100% of process water is returned to dyeing operations.

@@ -31,7 +31,7 @@ export const FabricExpertise: React.FC<FabricExpertiseProps> = ({ onSelectFabric
           </div>
 
           <p className="mt-4 md:mt-0 text-sm text-stone-600 max-w-md leading-relaxed">
-            Knitted on our 30 Mayer & Cie German machines and dyed under Zero Liquid Discharge (ZLD) at Akshera Knit Dyers. Discover our 8 core fabric structures and 6 certified blends.
+            Knitted on our 30 Mayer & Cie German machines and dyed under Zero Liquid Discharge (ZLD) closed-loop standards. Discover our 8 core fabric structures and 6 certified blends.
           </p>
         </div>
 

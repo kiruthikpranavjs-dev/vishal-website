@@ -25,7 +25,7 @@ export const SustainabilityZLD: React.FC = () => {
           </div>
 
           <p className="mt-4 md:mt-0 text-sm text-stone-600 max-w-md leading-relaxed">
-            Sustainability is deeply embedded in our operations. Our own dedicated wet processing unit, <strong>Akshera Knit Dyers Processes</strong>, follows a closed-loop Zero Liquid Discharge model.
+            Sustainability is deeply embedded in our operations. Our own dedicated wet processing unit operates under a closed-loop Zero Liquid Discharge model.
           </p>
         </div>
 
@@ -45,13 +45,13 @@ export const SustainabilityZLD: React.FC = () => {
               </div>
 
               <h3 className="font-serif text-3xl sm:text-4xl font-bold tracking-tight text-white leading-tight">
-                Akshera Knit Dyers Processes: <br />
+                Zero Liquid Discharge (ZLD) Wet Processing: <br />
                 <span className="text-emerald-400">100% Water Purified, Recovered & Reused</span>
               </h3>
 
               <div className="space-y-4 text-stone-300 text-sm sm:text-base leading-relaxed">
                 <p>
-                  At <strong>Bullet Impex Private Limited</strong>, we have our own wet processing unit in the name of <strong>Akshera Knit Dyers Processes</strong>. Sustainability is at the core of our operations.
+                  At <strong>Bullet Impex Private Limited</strong>, we operate our own eco-friendly wet processing and dyeing facility. Sustainability is at the core of our operations.
                 </p>
                 <p>
                   Our dyeing units follow the <strong>Zero Liquid Discharge (ZLD)</strong> process, which ensures that <strong>not a single drop of wastewater is released into the environment</strong>. Through advanced multi-stage treatment systems, every drop of process water is purified, recovered, and reused within our facility.
@@ -89,7 +89,7 @@ export const SustainabilityZLD: React.FC = () => {
               <div className="relative rounded-2xl overflow-hidden border-2 border-stone-700 aspect-[4/3] bg-stone-900 shadow-xl group">
                 <img
                   src="/images/factory/dyeing-unit.jpg"
-                  alt="Akshera Knit Dyers wet processing dyeing vessel"
+                  alt="Eco wet processing dyeing vessel with Zero Liquid Discharge"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
@@ -98,7 +98,7 @@ export const SustainabilityZLD: React.FC = () => {
                     Own Wet Processing Unit
                   </span>
                   <span className="text-sm font-bold">
-                    Akshera Knit Dyers Processes (ZLD)
+                    Eco Wet Processing & Dyeing (ZLD)
                   </span>
                 </div>
               </div>

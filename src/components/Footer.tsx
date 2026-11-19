@@ -76,7 +76,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenAuditModal, onOpenInquiryM
                 <Droplets className="h-5 w-5 shrink-0 text-[#A77B36]" strokeWidth={1.5} />
                 <div>
                   <div className="text-[9px] font-bold uppercase tracking-[0.18em] text-stone-500">Water management</div>
-                  <div className="mt-0.5 text-xs font-semibold tracking-wide text-stone-900">Akshera ZLD Unit</div>
+                  <div className="mt-0.5 text-xs font-semibold tracking-wide text-stone-900">In-House ZLD Unit</div>
                 </div>
               </div>
             </div>

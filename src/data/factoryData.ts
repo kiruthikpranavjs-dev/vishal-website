@@ -78,7 +78,7 @@ export const FACTORY_INFO = {
   experience: "18+ Years",
 
   // Wet processing & sustainability
-  dyeingUnit: "Akshera Knit Dyers Processes",
+  dyeingUnit: "In-House ZLD Dyeing & Wet Processing Unit",
   processType: "Zero Liquid Discharge (ZLD)",
   waterRecovery: "100% Water Recovered, Purified & Reused",
 
@@ -363,11 +363,11 @@ export const MANUFACTURING_STAGES: ManufacturingStageItem[] = [
   {
     letter: "C",
     title: "Dyeing",
-    subtitle: "Akshera Knit Dyers Processes (ZLD)",
-    description: "Adding color to fabric is not just about appearance—it's about sustainability and performance. At Bullet Impex, we carry out eco-friendly dyeing processes through our own wet processing unit in the name of Akshera Knit Dyers Processes. With a wide palette of shades to choose from, each fabric is dyed to enhance strength and longevity while minimizing environmental impact.",
+    subtitle: "Eco Wet Processing & Dyeing (ZLD)",
+    description: "Adding color to fabric is not just about appearance—it's about sustainability and performance. At Bullet Impex, we carry out eco-friendly dyeing processes through our own integrated wet processing unit. With a wide palette of shades to choose from, each fabric is dyed to enhance strength and longevity while minimizing environmental impact.",
     equipment: "Soft-flow eco-dyeing vessels with automated multi-stage ZLD reverse osmosis & thermal recovery",
     bulletPoints: [
-      "Akshera Knit Dyers Processes wet processing unit",
+      "Integrated eco-friendly wet processing facility",
       "Zero Liquid Discharge (ZLD) closed-loop water treatment",
       "100% of process water purified, recovered, and reused",
       "High color-fastness to washing, light, and perspiration"
@@ -516,7 +516,7 @@ export const WHY_CHOOSE_US_ITEMS: WhyChooseUsItem[] = [
   {
     number: "07",
     title: "Zero Liquid Discharge (ZLD) Process",
-    headline: "100% Water Recovery at Akshera Knit Dyers",
+    headline: "100% Water Recovery in Wet Processing",
     description: "Our own wet processing unit operates Zero Liquid Discharge, purifying and recycling 100% of wastewater with not a single drop discharged into nature.",
     metric: "100%",
     metricLabel: "Water Purified & Reused"
@@ -549,7 +549,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     id: "g3",
-    title: "Akshera Knit Dyers Wet Processing",
+    title: "Eco Wet Processing & Dyeing Unit",
     category: "Knitting & Dyeing",
     image: "/images/factory/dyeing-unit.jpg",
     caption: "Eco wet processing facility operating Zero Liquid Discharge (ZLD) with 100% water recycling."

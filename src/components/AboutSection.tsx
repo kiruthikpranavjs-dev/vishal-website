@@ -103,7 +103,7 @@ export const AboutSection: React.FC = () => {
               <div className="p-4 rounded-xl bg-white border border-stone-200/90 shadow-xs space-y-1">
                 <div className="flex items-center space-x-2 text-[#34251C] font-bold text-xs uppercase tracking-wide">
                   <Droplets className="w-4 h-4 text-emerald-600" />
-                  <span>Akshera ZLD Dyeing</span>
+                  <span>Eco-Friendly ZLD Dyeing</span>
                 </div>
                 <p className="text-[11px] text-stone-600 leading-relaxed">
                   Own wet processing unit operating Zero Liquid Discharge with 100% water recovery.

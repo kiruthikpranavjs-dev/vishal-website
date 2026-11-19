@@ -164,7 +164,7 @@ export const ResponsibleManufacturing: React.FC<ResponsibleManufacturingProps> =
               <span>Environmental Care</span>
             </div>
             <p className="text-xs text-stone-600 leading-relaxed">
-              Zero Liquid Discharge (ZLD) at Akshera Knit Dyers ensuring 100% water recovery with zero toxic effluent discharge.
+              Zero Liquid Discharge (ZLD) eco-dyeing ensuring 100% water recovery with zero toxic effluent discharge.
             </p>
           </div>
 
