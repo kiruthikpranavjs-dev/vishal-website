@@ -30,7 +30,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenAuditModal, onOpenInquiryM
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full transition-all duration-300">
+    <header className="fixed top-0 left-0 right-0 z-50 w-full transition-all duration-300">
       {/* Top Pre-Header Utility Bar */}
       <div className="bg-[#34251C] text-stone-300 text-[10px] px-3 py-1.5 border-b border-stone-800/80 hidden lg:block">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
