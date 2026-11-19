@@ -13,34 +13,42 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAuditModal, onOpenInquiryModal
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 sm:pt-16 pb-16 lg:pb-24">
         
-        {/* Top Eyebrow Badges */}
-        <div className="flex flex-wrap items-stretch gap-3 mb-8">
-          <div className="inline-flex min-w-[205px] items-center gap-3 border border-stone-300 bg-white/80 px-4 py-3 shadow-sm">
-            <MapPin className="h-5 w-5 shrink-0 text-stone-500" strokeWidth={1.5} />
-            <div>
-              <div className="text-[9px] font-bold uppercase tracking-[0.18em] text-stone-500">Manufacturing base</div>
-              <div className="mt-0.5 text-xs font-semibold tracking-wide text-stone-900">Tiruppur, Tamil Nadu, India</div>
+        {/* Top Eyebrow Badges: Small & Horizontally Next to Each Other on All Screens */}
+        <div className="grid grid-cols-3 gap-2 sm:gap-3 max-w-3xl mb-6 sm:mb-8">
+          <div className="flex items-center gap-1.5 sm:gap-2.5 border border-stone-300 bg-white/85 px-2 py-1.5 sm:px-3.5 sm:py-2.5 rounded-lg shadow-2xs min-w-0">
+            <MapPin className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0 text-stone-600" strokeWidth={1.8} />
+            <div className="min-w-0 flex-1">
+              <div className="text-[7.5px] sm:text-[9px] font-bold uppercase tracking-wider text-stone-500 truncate">Manufacturing base</div>
+              <div className="mt-0.5 text-[9.5px] sm:text-xs font-semibold tracking-wide text-stone-900 truncate">
+                <span className="hidden sm:inline">Tiruppur, TN, India</span>
+                <span className="sm:hidden">Tiruppur, India</span>
+              </div>
             </div>
           </div>
 
-          <div className="inline-flex min-w-[205px] items-center gap-3 border border-stone-300 bg-white/80 px-4 py-3 shadow-sm">
-            <Award className="h-5 w-5 shrink-0 text-[#A77B36]" strokeWidth={1.5} />
-            <div>
-              <div className="text-[9px] font-bold uppercase tracking-[0.18em] text-stone-500">Industry experience</div>
-              <div className="mt-0.5 text-xs font-semibold tracking-wide text-stone-900">18+ years in manufacturing</div>
+          <div className="flex items-center gap-1.5 sm:gap-2.5 border border-stone-300 bg-white/85 px-2 py-1.5 sm:px-3.5 sm:py-2.5 rounded-lg shadow-2xs min-w-0">
+            <Award className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0 text-[#A77B36]" strokeWidth={1.8} />
+            <div className="min-w-0 flex-1">
+              <div className="text-[7.5px] sm:text-[9px] font-bold uppercase tracking-wider text-stone-500 truncate">Industry experience</div>
+              <div className="mt-0.5 text-[9.5px] sm:text-xs font-semibold tracking-wide text-stone-900 truncate">
+                <span className="hidden sm:inline">18+ years in mfg</span>
+                <span className="sm:hidden">18+ years</span>
+              </div>
             </div>
           </div>
 
           <button
+            type="button"
             onClick={onOpenAuditModal}
-            className="inline-flex min-w-[235px] items-center gap-3 border border-stone-300 bg-white/80 px-4 py-2.5 text-left shadow-sm transition-colors hover:bg-white cursor-pointer"
+            className="flex items-center gap-1.5 sm:gap-2.5 border border-stone-300 bg-white/85 hover:bg-white px-2 py-1.5 sm:px-3.5 sm:py-2.5 rounded-lg shadow-2xs min-w-0 text-left transition-colors cursor-pointer"
           >
-            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-emerald-50 text-emerald-700 border border-emerald-200">
-              <ShieldCheck className="h-5 w-5" strokeWidth={2} />
-            </div>
-            <div>
-              <div className="text-[9px] font-bold uppercase tracking-[0.18em] text-stone-500">Social compliance audit</div>
-              <div className="mt-0.5 text-xs font-semibold tracking-wide text-stone-900">SMETA 4-Pillar · LRQA</div>
+            <ShieldCheck className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0 text-emerald-600" strokeWidth={2} />
+            <div className="min-w-0 flex-1">
+              <div className="text-[7.5px] sm:text-[9px] font-bold uppercase tracking-wider text-stone-500 truncate">Compliance audit</div>
+              <div className="mt-0.5 text-[9.5px] sm:text-xs font-semibold tracking-wide text-stone-900 truncate">
+                <span className="hidden sm:inline">SMETA 4-Pillar · LRQA</span>
+                <span className="sm:hidden">SMETA 4-Pillar</span>
+              </div>
             </div>
           </button>
         </div>
