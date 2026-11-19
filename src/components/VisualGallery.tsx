@@ -64,9 +64,9 @@ export const VisualGallery: React.FC = () => {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 pb-6 border-b border-stone-200">
           <div>
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#34251C] tracking-tight leading-[1.12]">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-stone-950 tracking-tight leading-[1.12]">
               Garment & <br />
-              <span className="italic font-normal font-serif text-[#93452E]">Factory Gallery.</span>
+              <span className="text-[#93452E]">Factory Gallery.</span>
             </h2>
           </div>
 
@@ -128,7 +128,7 @@ export const VisualGallery: React.FC = () => {
 
                 {/* Caption Content */}
                 <div className="absolute bottom-5 left-5 right-5 text-white">
-                  <h3 className="font-serif text-xl sm:text-2xl font-bold leading-tight group-hover:text-red-200 transition-colors">
+                  <h3 className="text-xl sm:text-2xl font-bold leading-tight group-hover:text-red-200 transition-colors">
                     {item.title}
                   </h3>
                   <p className="text-xs text-stone-300 mt-1 line-clamp-2 leading-relaxed">
@@ -186,7 +186,7 @@ export const VisualGallery: React.FC = () => {
             </div>
 
             <div className="mt-4 text-center max-w-2xl px-4">
-              <h3 className="font-serif text-xl sm:text-2xl font-bold text-white">
+              <h3 className="text-xl sm:text-2xl font-bold text-white">
                 {GALLERY_ITEMS[activeLightboxIndex].title}
               </h3>
               <p className="text-xs sm:text-sm text-stone-300 mt-1 leading-relaxed">

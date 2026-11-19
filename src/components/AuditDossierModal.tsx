@@ -24,7 +24,7 @@ export const AuditDossierModal: React.FC<AuditDossierModalProps> = ({ isOpen, on
               <span className="text-[10px] font-mono uppercase tracking-widest text-emerald-400 font-semibold block">
                 Ethical Audit Dossier
               </span>
-              <h3 className="font-serif text-lg sm:text-xl font-bold tracking-tight">
+              <h3 className="text-lg sm:text-xl font-extrabold tracking-tight">
                 Sedex SMETA 4-Pillar Verification
               </h3>
             </div>
@@ -54,7 +54,7 @@ export const AuditDossierModal: React.FC<AuditDossierModalProps> = ({ isOpen, on
           {/* Company & Verification Header */}
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-5 border-b border-stone-200">
             <div>
-              <h4 className="font-serif text-xl font-bold text-stone-900">
+              <h4 className="text-xl font-extrabold text-stone-950">
                 {FACTORY_INFO.name}
               </h4>
               <p className="text-xs text-stone-600 mt-0.5">

@@ -114,13 +114,13 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenAuditModal
         {/* Section Header */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-16 pb-6 border-b border-stone-300">
           <div className="lg:col-span-7">
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#34251C] tracking-tight leading-[1.12]">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-stone-950 tracking-tight leading-[1.12]">
               Let's Create <br />
-              <span className="italic font-normal font-serif text-[#93452E]">Something Together.</span>
+              <span className="text-[#93452E]">Something Together.</span>
             </h2>
           </div>
 
-          <div className="lg:col-span-5 text-sm text-stone-600 leading-relaxed font-normal">
+          <div className="lg:col-span-5 text-sm text-stone-800 leading-relaxed font-medium">
             We work closely with our partners to understand their requirements and deliver tailored apparel manufacturing solutions.
           </div>
         </div>
@@ -137,20 +137,20 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenAuditModal
                 <span className="text-[10px] font-mono uppercase tracking-widest text-[#93452E] font-bold block">
                   Direct Factory Contact
                 </span>
-                <h3 className="font-serif text-2xl font-bold text-stone-900 mt-1">
+                <h3 className="text-2xl font-extrabold text-stone-950 mt-1">
                   {FACTORY_INFO.contactPerson}
                 </h3>
-                <p className="text-xs text-stone-600 font-medium">
+                <p className="text-xs text-stone-800 font-semibold">
                   {FACTORY_INFO.designation} • {FACTORY_INFO.name}
                 </p>
               </div>
 
-              <div className="space-y-3.5 pt-3 border-t border-stone-200 text-xs text-stone-700">
+              <div className="space-y-3.5 pt-3 border-t border-stone-200 text-xs text-stone-900 font-medium">
                 {/* Phone */}
                 <div className="flex items-start space-x-3">
                   <Phone className="w-4 h-4 text-[#93452E] shrink-0 mt-0.5" />
                   <div>
-                    <span className="text-stone-400 block text-[10px] uppercase font-mono">Phone Number:</span>
+                    <span className="text-stone-700 block text-[10px] uppercase font-bold">Phone Number:</span>
                     <a 
                       href={`tel:${FACTORY_INFO.phoneRaw}`} 
                       className="font-mono font-bold text-stone-900 hover:text-[#93452E] text-sm tracking-wide"
@@ -254,7 +254,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenAuditModal
                     <span className="text-[10px] font-mono uppercase tracking-widest text-[#93452E] font-bold block">
                       B2B Sourcing Enquiry
                     </span>
-                    <h3 className="font-serif text-2xl font-bold text-stone-900 mt-1">
+                    <h3 className="text-2xl font-bold text-stone-900 mt-1">
                       Send a Manufacturing Enquiry
                     </h3>
                     <p className="text-xs text-stone-500 mt-0.5">
@@ -418,7 +418,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenAuditModal
                     <span className="text-xs font-mono font-bold text-emerald-800 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
                       Enquiry Logged: {referenceId}
                     </span>
-                    <h3 className="font-serif text-3xl font-bold text-stone-900 mt-2">
+                    <h3 className="text-3xl font-bold text-stone-900 mt-2">
                       Enquiry Form Validated
                     </h3>
                     <p className="text-xs sm:text-sm text-stone-600 max-w-md mx-auto">

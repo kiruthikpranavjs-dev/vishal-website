@@ -36,13 +36,13 @@ export const QualitySection: React.FC = () => {
         {/* Section Heading */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-16 pb-6 border-b border-stone-200">
           <div className="lg:col-span-7">
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#34251C] tracking-tight leading-[1.15]">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-stone-950 tracking-tight leading-[1.15]">
               Quality Is Woven Into <br />
-              <span className="italic font-normal font-serif text-[#93452E]">Every Detail.</span>
+              <span className="text-[#93452E]">Every Detail.</span>
             </h2>
           </div>
 
-          <div className="lg:col-span-5 text-sm text-stone-600 leading-relaxed">
+          <div className="lg:col-span-5 text-sm text-stone-800 font-medium leading-relaxed">
             Our dedicated Quality Control team monitors garments across every stage—from raw yarn testing and greige inspection to computerized sewing and final packaging under strict AQL 1.5 standards.
           </div>
         </div>
@@ -169,7 +169,7 @@ export const QualitySection: React.FC = () => {
         <div className="bg-stone-100 rounded-3xl p-8 sm:p-10 border border-stone-200">
           <div className="mb-6 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
             <div>
-              <h3 className="font-serif text-xl sm:text-2xl font-bold text-stone-900">
+              <h3 className="text-xl sm:text-2xl font-bold text-stone-900">
                 In-House Quality Testing Parameters
               </h3>
               <p className="text-xs text-stone-500 mt-0.5">

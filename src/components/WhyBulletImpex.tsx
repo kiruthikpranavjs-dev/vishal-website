@@ -22,13 +22,13 @@ export const WhyBulletImpex: React.FC<WhyBulletImpexProps> = ({ onOpenInquiryMod
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-6 border-b border-stone-200">
           <div>
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#34251C] tracking-tight leading-[1.12]">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-stone-950 tracking-tight leading-[1.12]">
               Why Bullet Impex? <br />
-              <span className="italic font-normal font-serif text-[#93452E]">Eight Pillars</span> of Reliability.
+              <span className="text-[#93452E]">Eight Pillars</span> of Reliability.
             </h2>
           </div>
 
-          <p className="mt-4 md:mt-0 text-sm text-stone-600 max-w-md leading-relaxed">
+          <p className="mt-4 md:mt-0 text-sm text-stone-800 font-medium max-w-md leading-relaxed">
             International fashion labels require a manufacturing partner combining artisanal textile craft, cutting-edge machine fleets, transparent compliance, and uncompromising timeline delivery.
           </p>
         </div>
@@ -59,13 +59,13 @@ export const WhyBulletImpex: React.FC<WhyBulletImpexProps> = ({ onOpenInquiryMod
 
                     {item.metric && (
                       <div className="text-right">
-                        <div className={`font-serif text-2xl font-bold font-mono ${
-                          isFeatured ? 'text-[#93452E]' : 'text-stone-900'
+                        <div className={`text-2xl font-black ${
+                          isFeatured ? 'text-[#93452E]' : 'text-stone-950'
                         }`}>
                           {item.metric}
                         </div>
-                        <span className={`text-[10px] font-mono uppercase tracking-wider block ${
-                          isFeatured ? 'text-stone-400' : 'text-stone-500'
+                        <span className={`text-[10px] uppercase tracking-wider block font-bold ${
+                          isFeatured ? 'text-stone-300' : 'text-stone-700'
                         }`}>
                           {item.metricLabel}
                         </span>
@@ -75,20 +75,20 @@ export const WhyBulletImpex: React.FC<WhyBulletImpexProps> = ({ onOpenInquiryMod
 
                   {/* Title & Headline */}
                   <div>
-                    <h3 className={`font-serif text-xl font-bold leading-tight ${
-                      isFeatured ? 'text-white' : 'text-stone-900'
+                    <h3 className={`text-xl font-bold leading-tight ${
+                      isFeatured ? 'text-white' : 'text-stone-950'
                     }`}>
                       {item.title}
                     </h3>
-                    <div className={`text-[11px] font-mono uppercase tracking-wider mt-1 ${
-                      isFeatured ? 'text-stone-400' : 'text-[#93452E] font-semibold'
+                    <div className={`text-[11px] uppercase tracking-wider mt-1 ${
+                      isFeatured ? 'text-stone-300 font-semibold' : 'text-[#93452E] font-bold'
                     }`}>
                       {item.headline}
                     </div>
                   </div>
 
-                  <p className={`text-xs leading-relaxed ${
-                    isFeatured ? 'text-stone-300' : 'text-stone-600'
+                  <p className={`text-xs leading-relaxed font-medium ${
+                    isFeatured ? 'text-stone-200' : 'text-stone-700'
                   }`}>
                     {item.description}
                   </p>
@@ -113,7 +113,7 @@ export const WhyBulletImpex: React.FC<WhyBulletImpexProps> = ({ onOpenInquiryMod
         {/* Bottom Partnership Callout Banner */}
         <div className="bg-[#FAF9F6] border border-stone-300 rounded-3xl p-8 sm:p-10 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="space-y-1 text-center md:text-left">
-            <h4 className="font-serif text-2xl font-bold text-stone-900">
+            <h4 className="text-2xl font-bold text-stone-900">
               Looking for a Reliable Knitted Garment Partner in India?
             </h4>
             <p className="text-xs sm:text-sm text-stone-600 max-w-2xl">

@@ -24,13 +24,13 @@ export const ProductCollections: React.FC<ProductCollectionsProps> = ({ onSelect
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-14 pb-6 border-b border-stone-200">
           <div>
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#34251C] tracking-tight leading-[1.12]">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-stone-950 tracking-tight leading-[1.12]">
               Apparel for Every Stage. <br />
-              <span className="italic font-normal font-serif text-[#93452E]">Crafted</span> with Purpose.
+              <span className="text-[#93452E]">Crafted</span> with Purpose.
             </h2>
           </div>
 
-          <p className="mt-4 md:mt-0 text-sm text-stone-600 max-w-md leading-relaxed">
+          <p className="mt-4 md:mt-0 text-sm text-stone-800 font-medium max-w-md leading-relaxed">
             Seven dedicated garment categories engineered across pure combed cotton, stretch elastane, modal, and lyocell blends. Tailored to international retail buyer benchmarks.
           </p>
         </div>
@@ -83,7 +83,7 @@ export const ProductCollections: React.FC<ProductCollectionsProps> = ({ onSelect
                       <div className="text-[11px] font-mono text-stone-300 uppercase tracking-widest">
                         {cat.tagline}
                       </div>
-                      <h3 className="font-serif text-2xl font-bold mt-0.5 leading-snug">
+                      <h3 className="text-2xl font-bold mt-0.5 leading-snug">
                         {cat.name}
                       </h3>
                     </div>
@@ -167,7 +167,7 @@ export const ProductCollections: React.FC<ProductCollectionsProps> = ({ onSelect
                 <span className="text-xs font-mono uppercase tracking-widest text-[#93452E] font-bold bg-white px-2 py-0.5 rounded">
                   {selectedCategory.tagline}
                 </span>
-                <h3 className="font-serif text-3xl font-bold mt-2">
+                <h3 className="text-3xl font-bold mt-2">
                   {selectedCategory.name}
                 </h3>
               </div>

@@ -44,11 +44,11 @@ export const AboutSection: React.FC = () => {
               {/* Secondary Composition: 18+ Years Highlight + Fabric Spools */}
               <div className="grid grid-cols-2 gap-4">
                 <div className="p-5 rounded-2xl bg-white border border-stone-300 shadow-sm flex flex-col justify-center">
-                  <div className="font-serif text-4xl font-black text-[#93452E] leading-none">18+</div>
+                  <div className="text-4xl font-black text-[#93452E] leading-none">18+</div>
                   <div className="text-xs font-bold text-stone-900 mt-2 uppercase tracking-wider">
                     Years of Expertise
                   </div>
-                  <p className="text-[11px] text-stone-500 mt-1 leading-snug">
+                  <p className="text-[11px] text-stone-700 font-medium mt-1 leading-snug">
                     Trusted knitted garment manufacturing in Tiruppur.
                   </p>
                 </div>
@@ -72,18 +72,18 @@ export const AboutSection: React.FC = () => {
           {/* Right Column: Exact Factual Introduction & Pillars */}
           <div className="lg:col-span-7 space-y-6">
             
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#34251C] tracking-tight leading-[1.12]">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-stone-950 tracking-tight leading-[1.12]">
               More Than Manufacturing. <br />
-              <span className="italic font-normal font-serif text-[#93452E]">A Commitment</span> to Quality.
+              <span className="text-[#93452E]">A Commitment</span> to Quality.
             </h2>
 
             {/* Exact Required Content Foundation */}
-            <div className="space-y-4 text-stone-700 text-sm sm:text-base leading-relaxed">
-              <p className="font-medium text-stone-900">
+            <div className="space-y-4 text-stone-800 text-sm sm:text-base leading-relaxed">
+              <p className="font-semibold text-stone-950">
                 Based in Tiruppur, India, <strong>Bullet Impex Private Limited</strong> is a trusted knitted garment manufacturer with over 18 years of expertise. We specialise in producing high-quality apparel for newborns, infants, toddlers, women, men, sleepwear and sportswear.
               </p>
               
-              <p className="text-stone-600">
+              <p className="text-stone-800 font-medium">
                 With integrated capabilities spanning yarn sourcing, knitting, dyeing, cutting, embroidery, stitching and quality control, we focus on delivering consistency and excellence from concept to completion.
               </p>
             </div>

@@ -155,7 +155,7 @@ export const RFQModal: React.FC<RFQModalProps> = ({
             <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-white/75 font-bold block">
               Direct Factory Merchandising
             </span>
-            <h3 className="font-serif text-xl sm:text-2xl font-bold tracking-tight mt-1 text-white">
+            <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight mt-1 text-white">
               {formData.styleInterest ? `Inquire: ${formData.styleInterest}` : 'Request Sampling & Quotation'}
             </h3>
           </div>
@@ -175,10 +175,10 @@ export const RFQModal: React.FC<RFQModalProps> = ({
             </div>
 
             <div className="rfq-reveal space-y-1">
-              <h4 className="font-serif text-2xl font-bold text-[#30251e]">
+              <h4 className="text-2xl font-extrabold text-[#1A1614]">
                 Your email draft is ready
               </h4>
-              <p className="text-xs sm:text-sm leading-6 text-[#76685d] max-w-md mx-auto">
+              <p className="text-xs sm:text-sm leading-6 text-[#38322B] font-medium max-w-md mx-auto">
                 Your mail app should open with the enquiry addressed to <strong>{FACTORY_INFO.email}</strong>. Review the details and press Send to deliver it.
               </p>
             </div>

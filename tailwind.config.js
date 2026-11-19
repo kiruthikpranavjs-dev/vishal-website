@@ -30,10 +30,14 @@ export default {
         stone: {
           50: '#FAF9F6',
           100: '#F4F2EC',
-          200: '#EAE6DD',
-          300: '#D9D3C7',
-          400: '#B6ACA0',
-          500: '#8C8276',
+          200: '#E7E2DA',
+          300: '#D1C9BC',
+          400: '#6B635B',
+          500: '#4D463F',
+          600: '#38322B',
+          700: '#26211C',
+          800: '#1C1814',
+          900: '#120F0D',
         },
         sage: {
           50: '#F2F7F4',
@@ -43,9 +47,9 @@ export default {
         }
       },
       fontFamily: {
-        serif: ['"Georgia"', 'serif'],
-        sans: ['"Plus Jakarta Sans"', 'Inter', 'system-ui', 'sans-serif'],
-        mono: ['"JetBrains Mono"', 'Fira Code', 'monospace']
+        sans: ['"Plus Jakarta Sans"', 'Inter', 'system-ui', '-apple-system', 'sans-serif'],
+        serif: ['"Plus Jakarta Sans"', 'Inter', 'system-ui', '-apple-system', 'sans-serif'],
+        mono: ['"Plus Jakarta Sans"', 'Inter', 'system-ui', '-apple-system', 'sans-serif']
       },
       letterSpacing: {
         widest: '.2em',

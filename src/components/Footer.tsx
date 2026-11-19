@@ -20,10 +20,10 @@ export const Footer: React.FC<FooterProps> = ({ onOpenAuditModal, onOpenInquiryM
       <div className="border-b border-stone-800 py-12 bg-black/40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="space-y-1 text-center md:text-left">
-            <h3 className="font-serif text-2xl sm:text-3xl font-bold text-white tracking-tight">
+            <h3 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
               Ready to Discuss Your Next Knitted Garment Production?
             </h3>
-            <p className="text-xs sm:text-sm text-stone-400">
+            <p className="text-xs sm:text-sm text-stone-300 font-medium">
               18+ Years of expertise in Tiruppur. Rapid counter-sampling in 7–10 days.
             </p>
           </div>
@@ -54,7 +54,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenAuditModal, onOpenInquiryM
           <div className="lg:col-span-4 space-y-5">
             <BrandLogo variant="dark" />
 
-            <div className="space-y-2 text-xs sm:text-sm text-stone-400 leading-relaxed max-w-sm">
+            <div className="space-y-2 text-xs sm:text-sm text-stone-300 leading-relaxed max-w-sm font-medium">
               <p>
                 <strong>BULLET IMPEX PRIVATE LIMITED</strong> is a premier knitted garment manufacturing and apparel export company based in Tiruppur, India. Over 18 years of technical excellence delivering consistency from concept to completion.
               </p>
@@ -170,7 +170,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenAuditModal, onOpenInquiryM
       </div>
 
       {/* Bottom Legal & Copyright Bar */}
-      <div className="border-t border-stone-800/80 py-6 text-stone-500 text-xs">
+      <div className="border-t border-stone-800/80 py-6 text-stone-300 text-xs font-medium">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="text-center sm:text-left">
             © 2026 {FACTORY_INFO.legalEntity}. All rights reserved. Tiruppur, Tamil Nadu, India.

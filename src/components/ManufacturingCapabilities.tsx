@@ -21,13 +21,13 @@ export const ManufacturingCapabilities: React.FC = () => {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-14 pb-6 border-b border-stone-200">
           <div>
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#34251C] tracking-tight leading-[1.12]">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-stone-950 tracking-tight leading-[1.12]">
               From Yarn to <br />
-              <span className="italic font-normal font-serif text-[#93452E]">Finished Garment.</span>
+              <span className="text-[#93452E]">Finished Garment.</span>
             </h2>
           </div>
 
-          <p className="mt-4 md:mt-0 text-sm text-stone-600 max-w-md leading-relaxed">
+          <p className="mt-4 md:mt-0 text-sm text-stone-800 font-medium max-w-md leading-relaxed">
             Nine synchronized manufacturing departments under one roof in Tiruppur. Powered by German Mayer & Cie knitting, Shima Seiki collars, Barudan/Tajima embroidery, and 50+ computerized stitching stations.
           </p>
         </div>
@@ -119,7 +119,7 @@ export const ManufacturingCapabilities: React.FC = () => {
 
                 {/* Stage Title */}
                 <div>
-                  <h3 className="font-serif text-3xl sm:text-4xl font-bold text-[#34251C] leading-tight">
+                  <h3 className="text-3xl sm:text-4xl font-bold text-[#34251C] leading-tight">
                     {stage.title}
                   </h3>
                   <div className="text-xs font-mono font-bold uppercase tracking-wider text-[#93452E] mt-1">

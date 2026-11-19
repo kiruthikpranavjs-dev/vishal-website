@@ -100,7 +100,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenAuditModal, onOpenInquiryM
           </a>
 
           {/* Right Desktop Nav Links */}
-          <div className="hidden lg:flex items-center space-x-4 xl:space-x-6 text-[11px] xl:text-xs font-bold text-stone-700 uppercase tracking-wider">
+          <div className="hidden lg:flex items-center space-x-4 xl:space-x-6 text-[11px] xl:text-xs font-extrabold text-stone-900 uppercase tracking-wider">
             {navLinks.map((item) => (
               <a 
                 key={item.name} 

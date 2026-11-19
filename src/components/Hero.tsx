@@ -54,17 +54,17 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAuditModal, onOpenInquiryModal
                 {FACTORY_INFO.legalEntity}
               </span>
 
-              <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#34251C] font-bold tracking-tight leading-[1.08]">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl text-stone-950 font-extrabold tracking-tight leading-[1.08]">
                 Crafting Quality. <br />
-                <span className="italic font-normal font-serif text-[#93452E]">Defining</span> Apparel.
+                <span className="text-[#93452E]">Defining</span> Apparel.
               </h1>
             </div>
 
-            <p className="font-mono text-sm sm:text-base font-semibold text-stone-700 tracking-wide">
+            <p className="text-sm sm:text-base font-bold text-stone-900 tracking-wide">
               18+ Years of Expertise in Knitted Garment Manufacturing.
             </p>
 
-            <p className="text-base sm:text-lg text-stone-600 leading-relaxed font-normal max-w-2xl">
+            <p className="text-base sm:text-lg text-stone-800 leading-relaxed font-normal max-w-2xl">
               An established apparel manufacturing and export company based in Tiruppur, India. Combining the visual finesse of a premium international fashion brand with vertically integrated production—from German circular knitting and Zero Liquid Discharge (ZLD) eco-dyeing to automated printing, embroidery, and AQL 1.5 certified CMT export lines.
             </p>
 
@@ -132,7 +132,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAuditModal, onOpenInquiryModal
               <figcaption className="flex items-center justify-between gap-4 px-2 pt-3 pb-1">
                 <div>
                   <div className="text-[9px] font-bold uppercase tracking-[0.2em] text-[#93452E]">Integrated production facility</div>
-                  <div className="mt-1 font-serif text-base font-semibold text-[#34251C]">Mannarai, Tiruppur</div>
+                  <div className="mt-1 text-base font-semibold text-[#34251C]">Mannarai, Tiruppur</div>
                 </div>
                 <span className="h-px w-12 shrink-0 bg-[#93452E]/55" aria-hidden="true" />
               </figcaption>
@@ -149,7 +149,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAuditModal, onOpenInquiryModal
           <div className="grid grid-cols-2 md:grid-cols-5 gap-6 text-center">
             
             <div className="space-y-1">
-              <div className="font-serif text-2xl sm:text-3xl font-bold text-white tracking-tight">
+              <div className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
                 {FACTORY_INFO.experience}
               </div>
               <div className="text-[11px] uppercase tracking-wider text-stone-400 font-medium">
@@ -158,37 +158,37 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAuditModal, onOpenInquiryModal
             </div>
 
             <div className="space-y-1">
-              <div className="font-serif text-2xl sm:text-3xl font-bold text-[#93452E] tracking-tight">
+              <div className="text-2xl sm:text-3xl font-extrabold text-[#93452E] tracking-tight">
                 5,000 Pcs/Day
               </div>
-              <div className="text-[11px] uppercase tracking-wider text-stone-400 font-medium">
+              <div className="text-[11px] uppercase tracking-wider text-stone-200 font-semibold">
                 Cutting Capacity
               </div>
             </div>
 
             <div className="space-y-1">
-              <div className="font-serif text-2xl sm:text-3xl font-bold text-white tracking-tight">
+              <div className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
                 4,500 Pcs/Day
               </div>
-              <div className="text-[11px] uppercase tracking-wider text-stone-400 font-medium">
+              <div className="text-[11px] uppercase tracking-wider text-stone-200 font-semibold">
                 Sewing & Stitching Lines
               </div>
             </div>
 
             <div className="space-y-1">
-              <div className="font-serif text-2xl sm:text-3xl font-bold text-emerald-400 tracking-tight">
+              <div className="text-2xl sm:text-3xl font-extrabold text-emerald-400 tracking-tight">
                 100% ZLD
               </div>
-              <div className="text-[11px] uppercase tracking-wider text-stone-400 font-medium">
+              <div className="text-[11px] uppercase tracking-wider text-stone-200 font-semibold">
                 Closed-Loop Water Recovery
               </div>
             </div>
 
             <div className="col-span-2 md:col-span-1 space-y-1">
-              <div className="font-serif text-2xl sm:text-3xl font-bold text-amber-400 tracking-tight">
+              <div className="text-2xl sm:text-3xl font-extrabold text-amber-300 tracking-tight">
                 AQL 1.5
               </div>
-              <div className="text-[11px] uppercase tracking-wider text-stone-400 font-medium">
+              <div className="text-[11px] uppercase tracking-wider text-stone-200 font-semibold">
                 Strict Quality Standard
               </div>
             </div>

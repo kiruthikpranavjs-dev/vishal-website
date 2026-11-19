@@ -24,13 +24,13 @@ export const FabricExpertise: React.FC<FabricExpertiseProps> = ({ onSelectFabric
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-14 pb-6 border-b border-stone-300">
           <div>
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#34251C] tracking-tight leading-[1.12]">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-stone-950 tracking-tight leading-[1.12]">
               Every Great Garment <br />
-              <span className="italic font-normal font-serif text-[#93452E]">Begins with</span> the Right Fabric.
+              <span className="text-[#93452E]">Begins with</span> the Right Fabric.
             </h2>
           </div>
 
-          <p className="mt-4 md:mt-0 text-sm text-stone-600 max-w-md leading-relaxed">
+          <p className="mt-4 md:mt-0 text-sm text-stone-800 font-medium max-w-md leading-relaxed">
             Knitted on our 30 Mayer & Cie German machines and dyed under Zero Liquid Discharge (ZLD) closed-loop standards. Discover our 8 core fabric structures and 6 certified blends.
           </p>
         </div>
@@ -42,11 +42,11 @@ export const FabricExpertise: React.FC<FabricExpertiseProps> = ({ onSelectFabric
               <span className="text-[10px] font-mono uppercase tracking-widest text-[#93452E] font-bold block">
                 Knitted Fabric Structures (8 Varieties)
               </span>
-              <h3 className="font-serif text-2xl sm:text-3xl font-bold text-stone-900 mt-1">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-stone-950 mt-1">
                 Precision Knit Textures & Gauges
               </h3>
             </div>
-            <span className="px-3 py-1 rounded-full bg-stone-100 text-stone-700 text-xs font-mono font-semibold border border-stone-200">
+            <span className="px-3 py-1 rounded-full bg-stone-100 text-stone-900 text-xs font-bold border border-stone-200">
               German Circular & Flat Knit Versatility
             </span>
           </div>
@@ -95,7 +95,7 @@ export const FabricExpertise: React.FC<FabricExpertiseProps> = ({ onSelectFabric
                   <span className="text-[10px] font-mono uppercase tracking-widest text-[#93452E] font-bold block">
                     {activeFabric.structure}
                   </span>
-                  <h4 className="font-serif text-2xl sm:text-3xl font-bold text-stone-900 mt-0.5">
+                  <h4 className="text-2xl sm:text-3xl font-bold text-stone-900 mt-0.5">
                     {activeFabric.name}
                   </h4>
                 </div>
@@ -158,7 +158,7 @@ export const FabricExpertise: React.FC<FabricExpertiseProps> = ({ onSelectFabric
               <span className="text-[10px] font-mono uppercase tracking-widest text-[#93452E] font-bold block">
                 Material Chemistry & Sustainability
               </span>
-              <h3 className="font-serif text-2xl sm:text-3xl font-bold text-stone-900 mt-1">
+              <h3 className="text-2xl sm:text-3xl font-bold text-stone-900 mt-1">
                 Material Blends We Specialize In
               </h3>
             </div>
@@ -180,7 +180,7 @@ export const FabricExpertise: React.FC<FabricExpertiseProps> = ({ onSelectFabric
                     </span>
                     <Feather className="w-4 h-4 text-stone-400" />
                   </div>
-                  <h4 className="font-serif text-lg font-bold text-stone-900">
+                  <h4 className="text-lg font-bold text-stone-900">
                     {blend.name}
                   </h4>
                   <p className="text-xs text-stone-600 leading-relaxed">

@@ -18,13 +18,13 @@ export const SustainabilityZLD: React.FC = () => {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-14 pb-6 border-b border-stone-200">
           <div>
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#34251C] tracking-tight leading-[1.12]">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-stone-950 tracking-tight leading-[1.12]">
               Creating Better Apparel. <br />
-              <span className="italic font-normal font-serif text-[#93452E]">With Greater</span> Responsibility.
+              <span className="text-[#93452E]">With Greater</span> Responsibility.
             </h2>
           </div>
 
-          <p className="mt-4 md:mt-0 text-sm text-stone-600 max-w-md leading-relaxed">
+          <p className="mt-4 md:mt-0 text-sm text-stone-800 font-medium max-w-md leading-relaxed">
             Sustainability is deeply embedded in our operations. Our own dedicated wet processing unit operates under a closed-loop Zero Liquid Discharge model.
           </p>
         </div>
@@ -44,19 +44,19 @@ export const SustainabilityZLD: React.FC = () => {
                 <span>Zero Liquid Discharge (ZLD) Facility</span>
               </div>
 
-              <h3 className="font-serif text-3xl sm:text-4xl font-bold tracking-tight text-white leading-tight">
+              <h3 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white leading-tight">
                 Zero Liquid Discharge (ZLD) Wet Processing: <br />
                 <span className="text-emerald-400">100% Water Purified, Recovered & Reused</span>
               </h3>
 
-              <div className="space-y-4 text-stone-300 text-sm sm:text-base leading-relaxed">
+              <div className="space-y-4 text-stone-200 text-sm sm:text-base leading-relaxed font-medium">
                 <p>
                   At <strong>Bullet Impex Private Limited</strong>, we operate our own eco-friendly wet processing and dyeing facility. Sustainability is at the core of our operations.
                 </p>
                 <p>
                   Our dyeing units follow the <strong>Zero Liquid Discharge (ZLD)</strong> process, which ensures that <strong>not a single drop of wastewater is released into the environment</strong>. Through advanced multi-stage treatment systems, every drop of process water is purified, recovered, and reused within our facility.
                 </p>
-                <p className="text-stone-400 text-xs sm:text-sm">
+                <p className="text-stone-300 text-xs sm:text-sm font-medium">
                   This eco-conscious approach not only drastically reduces fresh water consumption but also eliminates environmental impact, aligning with our commitment to ethical and sustainable apparel manufacturing.
                 </p>
               </div>
@@ -64,21 +64,21 @@ export const SustainabilityZLD: React.FC = () => {
               {/* 3 Technical Checkpoints */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
                 <div className="p-4 rounded-xl bg-white/5 border border-white/10 space-y-1">
-                  <div className="font-serif text-2xl font-bold text-emerald-400 font-mono">100%</div>
+                  <div className="text-2xl font-black text-emerald-400">100%</div>
                   <div className="text-xs font-semibold text-white">Water Recovery</div>
-                  <p className="text-[10px] text-stone-400">Zero discharge into rivers or ground.</p>
+                  <p className="text-[10px] text-stone-300 font-medium">Zero discharge into rivers or ground.</p>
                 </div>
 
                 <div className="p-4 rounded-xl bg-white/5 border border-white/10 space-y-1">
-                  <div className="font-serif text-2xl font-bold text-cyan-400 font-mono">Closed</div>
+                  <div className="text-2xl font-black text-cyan-400">Closed</div>
                   <div className="text-xs font-semibold text-white">Loop Cycle</div>
-                  <p className="text-[10px] text-stone-400">Continuous biological & RO recycling.</p>
+                  <p className="text-[10px] text-stone-300 font-medium">Continuous biological & RO recycling.</p>
                 </div>
 
                 <div className="p-4 rounded-xl bg-white/5 border border-white/10 space-y-1">
-                  <div className="font-serif text-2xl font-bold text-white font-mono">Safe</div>
+                  <div className="text-2xl font-black text-white">Safe</div>
                   <div className="text-xs font-semibold text-white">Non-Azo Dyes</div>
-                  <p className="text-[10px] text-stone-400">Low-temperature reactive chemistry.</p>
+                  <p className="text-[10px] text-stone-300 font-medium">Low-temperature reactive chemistry.</p>
                 </div>
               </div>
 

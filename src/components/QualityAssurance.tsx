@@ -36,13 +36,13 @@ export const QualityAssurance: React.FC = () => {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-14 pb-6 border-b border-stone-300">
           <div>
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#34251C] tracking-tight leading-[1.12]">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-stone-950 tracking-tight leading-[1.12]">
               Every Detail <br />
-              <span className="italic font-normal font-serif text-[#93452E]">Matters.</span>
+              <span className="text-[#93452E]">Matters.</span>
             </h2>
           </div>
 
-          <p className="mt-4 md:mt-0 text-sm text-stone-600 max-w-md leading-relaxed">
+          <p className="mt-4 md:mt-0 text-sm text-stone-800 font-medium max-w-md leading-relaxed">
             Our dedicated quality control team conducts continuous inspection across every production stage—from raw yarn and greige knitting to in-line stitching and final pre-shipment audits.
           </p>
         </div>
@@ -165,10 +165,10 @@ export const QualityAssurance: React.FC = () => {
         <div className="bg-white rounded-3xl p-8 sm:p-10 border border-stone-300 shadow-lg">
           <div className="mb-6 flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-4 border-b border-stone-200">
             <div>
-              <h3 className="font-serif text-2xl font-bold text-stone-900">
+              <h3 className="text-2xl font-extrabold text-stone-950">
                 Core In-House Testing Parameters
               </h3>
-              <p className="text-xs text-stone-500 mt-0.5">
+              <p className="text-xs text-stone-700 font-medium mt-0.5">
                 Conducted in-house as per buyer requirement and international testing standards.
               </p>
             </div>

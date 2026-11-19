@@ -22,13 +22,13 @@ export const ResponsibleManufacturing: React.FC<ResponsibleManufacturingProps> =
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-14 pb-6 border-b border-stone-300">
           <div>
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#34251C] tracking-tight leading-[1.12]">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-stone-950 tracking-tight leading-[1.12]">
               Responsible Practices. <br />
-              <span className="italic font-normal font-serif text-[#93452E]">Stronger</span> Partnerships.
+              <span className="text-[#93452E]">Stronger</span> Partnerships.
             </h2>
           </div>
 
-          <p className="mt-4 md:mt-0 text-sm text-stone-600 max-w-md leading-relaxed">
+          <p className="mt-4 md:mt-0 text-sm text-stone-800 font-medium max-w-md leading-relaxed">
             Bullet Impex Private Limited has undergone a rigorous SMETA 4-Pillar social and environmental audit conducted by LRQA, maintaining transparent governance and ethical labour standards.
           </p>
         </div>
@@ -52,11 +52,11 @@ export const ResponsibleManufacturing: React.FC<ResponsibleManufacturingProps> =
                 </span>
               </div>
 
-              <h3 className="font-serif text-2xl sm:text-3xl font-bold text-stone-900 leading-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-stone-950 leading-tight">
                 Audited by LRQA (Lloyd's Register Quality Assurance)
               </h3>
 
-              <p className="text-xs sm:text-sm text-stone-600 leading-relaxed max-w-2xl">
+              <p className="text-xs sm:text-sm text-stone-800 font-medium leading-relaxed max-w-2xl">
                 Bullet Impex has undergone a comprehensive full initial SMETA 4-Pillar audit conducted by <strong>LRQA</strong> (Audit Reference: <strong>{FACTORY_INFO.auditCompany} / {FACTORY_INFO.sedexSiteRef}</strong>, Date of Audit: <strong>19 May 2026</strong>). All corrective-action findings listed in the report were formally reviewed, verified, and <strong>closed in July 2026</strong>.
               </p>
 
