@@ -116,7 +116,7 @@
   background-repeat: repeat;
   background-position: center top;
   background-size: 1400px auto;
-  opacity: 0.70;
+  opacity: 0.50;
 }
 
 @media (max-width: 768px) {
