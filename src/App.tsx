@@ -31,10 +31,8 @@ export function App() {
   };
 
   return (
-    <div className="relative min-h-screen bg-transparent text-[#34251C] font-sans selection:bg-[#93452E] selection:text-white">
-      <div className="site-background" aria-hidden="true">
-        <img src="/images/site-cloth-background.png" alt="" />
-      </div>
+    <div className="relative min-h-screen bg-[#f7f0e4] text-[#34251C] font-sans selection:bg-[#93452E] selection:text-white overflow-x-hidden">
+      <div className="site-background" aria-hidden="true" />
       <div className="relative z-10 min-h-screen flex flex-col">
       {/* SECTION 1: NAVIGATION */}
       <Header

@@ -97,33 +97,27 @@
   position: absolute;
   z-index: 0;
   inset: 0;
-  pointer-events: none;
-  background: #e8dfd0;
-}
-
-.site-background img {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: max(140vw, 248.64vh);
+  width: 100%;
   height: 100%;
-  max-width: none;
-  max-height: none;
-  object-fit: cover;
-  object-position: center top;
-  transform: translateX(-50%);
+  overflow: hidden;
+  pointer-events: none;
+  background-color: #f7f0e4;
+  background-image: url('/images/site-cloth-background.png');
+  background-repeat: repeat;
+  background-position: center top;
+  background-size: 1400px auto;
 }
 
 .site-background::after {
   position: absolute;
   inset: 0;
   content: '';
-  background: rgba(250, 244, 233, 0.68);
+  background: rgba(250, 244, 233, 0.45);
 }
 
-@media (max-aspect-ratio: 3/4) {
-  .site-background img {
-    width: max(124vw, 220.13vh);
+@media (max-width: 768px) {
+  .site-background {
+    background-size: 720px auto;
   }
 }
 
