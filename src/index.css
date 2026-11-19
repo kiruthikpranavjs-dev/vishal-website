@@ -1,0 +1,194 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header-menu-bar {
+  background-color: rgba(250, 244, 233, 0.94);
+  background-image:
+    linear-gradient(rgba(250, 244, 233, 0.72), rgba(250, 244, 233, 0.76)),
+    url('/images/menu-red-cloth-crop.jpg');
+  background-position: center 70%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(8px);
+}
+
+.enquire-cloth-button {
+  color: #fff;
+  border: 0;
+  background-color: #bd2036;
+  background-image:
+    linear-gradient(rgba(189, 32, 54, 0.76), rgba(189, 32, 54, 0.76)),
+    url('/images/menu-red-cloth-crop.jpg');
+  background-position: center 62%;
+  background-size: cover;
+  box-shadow: 0 2px 6px rgba(52, 37, 28, 0.2);
+}
+
+.enquire-cloth-button:hover {
+  background-image:
+    linear-gradient(rgba(189, 32, 54, 0.68), rgba(189, 32, 54, 0.68)),
+    url('/images/menu-red-cloth-crop.jpg');
+  box-shadow: 0 3px 8px rgba(52, 37, 28, 0.24);
+  transform: translateY(-1px);
+}
+
+.rfq-cloth-surface,
+.rfq-cloth-header {
+  background-color: #bd2036;
+  background-image:
+    linear-gradient(rgba(189, 32, 54, 0.58), rgba(189, 32, 54, 0.58)),
+    url('/images/rfq-red-cloth.png');
+  background-position: center 56%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.rfq-cloth-content {
+  background-color: #fbf8f2;
+  background-image:
+    linear-gradient(rgba(251, 248, 242, 0.88), rgba(251, 248, 242, 0.88)),
+    url('/images/rfq-red-cloth.png');
+  background-position: center 56%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.rfq-modal-scroll {
+  scrollbar-color: rgba(147, 69, 46, 0.35) transparent;
+  scrollbar-width: thin;
+}
+
+.rfq-reveal {
+  opacity: 0;
+  transform: translate3d(0, 10px, 0);
+  filter: blur(3px);
+  transition:
+    opacity 520ms cubic-bezier(0.2, 0.75, 0.25, 1) var(--rfq-reveal-delay, 0ms),
+    transform 620ms cubic-bezier(0.16, 1, 0.3, 1) var(--rfq-reveal-delay, 0ms),
+    filter 620ms cubic-bezier(0.16, 1, 0.3, 1) var(--rfq-reveal-delay, 0ms);
+  border-radius: 12px;
+}
+
+.rfq-reveal-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  filter: blur(0);
+  animation: rfq-soft-highlight 1.15s ease-out both;
+}
+
+@keyframes rfq-soft-highlight {
+  0% { box-shadow: 0 0 0 5px rgba(220, 160, 112, 0.24); }
+  100% { box-shadow: 0 0 0 0 rgba(220, 160, 112, 0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rfq-reveal,
+  .rfq-reveal-visible {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    transition: none;
+    animation: none;
+  }
+}
+
+.site-background {
+  position: fixed;
+  z-index: 0;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background: #e8dfd0;
+}
+
+.site-background img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: max(140vw, 248.64vh);
+  height: auto;
+  max-width: none;
+  max-height: none;
+  transform: translate3d(-50%, calc(-50% + var(--site-bg-pan-y, 0vh)), 0);
+  will-change: transform;
+}
+
+.site-background::after {
+  position: absolute;
+  inset: 0;
+  content: '';
+  background: rgba(250, 244, 233, 0.68);
+}
+
+@media (max-aspect-ratio: 3/4) {
+  .site-background img {
+    width: max(124vw, 220.13vh);
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  body {
+    background-color: #FFFFFF;
+    color: #34251C;
+    overflow-x: hidden;
+  }
+}
+
+/* Refined Subtle Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Corporate Card & Border Utilities */
+.card-executive {
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px -1px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease-in-out;
+}
+
+.card-executive:hover {
+  border-color: #CBD5E1;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Compliance Badge Styling */
+.badge-sedex {
+  background-color: #ECFDF5;
+  color: #065F46;
+  border: 1px solid #A7F3D0;
+}
+
+/* Print Styles for Corporate Audit Deck / Profile Dossier */
+@media print {
+  body {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}

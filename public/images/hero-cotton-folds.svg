@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="cloth" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#fbfaf7"/>
+      <stop offset=".48" stop-color="#f5f1e9"/>
+      <stop offset="1" stop-color="#faf9f6"/>
+    </linearGradient>
+    <linearGradient id="foldA" x1=".08" y1=".08" x2=".9" y2=".9">
+      <stop stop-color="#fff" stop-opacity=".8"/>
+      <stop offset=".42" stop-color="#e8e0d3" stop-opacity=".28"/>
+      <stop offset=".62" stop-color="#cfc3b1" stop-opacity=".19"/>
+      <stop offset="1" stop-color="#fff" stop-opacity=".55"/>
+    </linearGradient>
+    <linearGradient id="foldB" x1=".1" y1="1" x2=".95" y2=".05">
+      <stop stop-color="#d8cdbd" stop-opacity=".2"/>
+      <stop offset=".3" stop-color="#fff" stop-opacity=".64"/>
+      <stop offset=".54" stop-color="#ddd3c5" stop-opacity=".22"/>
+      <stop offset=".8" stop-color="#fff" stop-opacity=".72"/>
+      <stop offset="1" stop-color="#e9e2d7" stop-opacity=".2"/>
+    </linearGradient>
+    <radialGradient id="softLight" cx=".5" cy=".5" r=".5">
+      <stop stop-color="#fff" stop-opacity=".72"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="fiber" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".42" numOctaves="2" seed="9"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="table" tableValues="0 .075"/></feComponentTransfer>
+    </filter>
+    <filter id="soften" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="28"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#cloth)"/>
+  <path d="M-140 40 C180 110 245 300 510 345 C760 388 880 230 1125 255 C1325 276 1450 410 1740 365 L1740 665 C1425 720 1300 560 1080 548 C840 535 720 690 475 650 C210 607 115 445 -140 410Z" fill="url(#foldA)"/>
+  <path d="M-100 520 C185 470 315 625 520 712 C735 802 880 735 1070 650 C1275 558 1430 628 1710 790 L1710 1080 L-100 1080Z" fill="url(#foldB)"/>
+  <path d="M-80 405 C180 455 255 575 495 608 C735 640 860 488 1090 480 C1320 470 1455 610 1690 625" fill="none" stroke="#bfb19e" stroke-opacity=".14" stroke-width="76" filter="url(#soften)"/>
+  <path d="M-100 377 C190 424 270 542 503 566 C740 590 875 446 1098 439 C1320 432 1480 570 1710 590" fill="none" stroke="#fff" stroke-opacity=".52" stroke-width="43" filter="url(#soften)"/>
+  <ellipse cx="1240" cy="180" rx="500" ry="280" fill="url(#softLight)"/>
+  <rect width="1600" height="1000" filter="url(#fiber)" opacity=".18"/>
+</svg>
