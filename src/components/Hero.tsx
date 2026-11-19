@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Download, ChevronDown, CheckCircle2, MapPin, Award, ShieldCheck } from 'lucide-react';
+import { ArrowRight, Download, ChevronDown, CheckCircle2 } from 'lucide-react';
 import { FACTORY_INFO } from '../data/factoryData';
 
 interface HeroProps {
@@ -11,65 +11,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAuditModal, onOpenInquiryModal
   return (
     <section id="hero" className="relative bg-transparent border-b border-stone-200 overflow-hidden">
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 sm:pt-6 pb-16 lg:pb-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 sm:pt-10 pb-16 lg:pb-24">
         
-        {/* 3 Official Factory Certifications: Positioned directly below the menu bar */}
-        <div className="grid grid-cols-3 gap-2 sm:gap-3.5 max-w-4xl mb-6 sm:mb-10">
-          
-          {/* 1. Manufacturing Base */}
-          <div className="flex items-center gap-2 sm:gap-3 border border-stone-300 bg-white/95 px-2.5 py-2 sm:px-4 sm:py-3 rounded-xl shadow-xs">
-            <div className="flex h-7 w-7 sm:h-8 sm:w-8 shrink-0 items-center justify-center rounded-lg bg-stone-100 border border-stone-200">
-              <MapPin className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-[#93452E]" strokeWidth={2} />
-            </div>
-            <div className="min-w-0">
-              <div className="text-[7.5px] sm:text-[9px] font-bold uppercase tracking-wider text-stone-500 leading-tight">
-                Manufacturing Base
-              </div>
-              <div className="mt-0.5 text-[9.5px] sm:text-xs font-bold text-stone-900 leading-snug">
-                <span className="sm:hidden">Tiruppur, India</span>
-                <span className="hidden sm:inline">Tiruppur, Tamil Nadu, India</span>
-              </div>
-            </div>
-          </div>
-
-          {/* 2. Industry Experience */}
-          <div className="flex items-center gap-2 sm:gap-3 border border-stone-300 bg-white/95 px-2.5 py-2 sm:px-4 sm:py-3 rounded-xl shadow-xs">
-            <div className="flex h-7 w-7 sm:h-8 sm:w-8 shrink-0 items-center justify-center rounded-lg bg-amber-50 border border-amber-200">
-              <Award className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-[#A77B36]" strokeWidth={2} />
-            </div>
-            <div className="min-w-0">
-              <div className="text-[7.5px] sm:text-[9px] font-bold uppercase tracking-wider text-stone-500 leading-tight">
-                Industry Experience
-              </div>
-              <div className="mt-0.5 text-[9.5px] sm:text-xs font-bold text-stone-900 leading-snug">
-                <span className="sm:hidden">18+ Years Mfg</span>
-                <span className="hidden sm:inline">18+ Years in Manufacturing</span>
-              </div>
-            </div>
-          </div>
-
-          {/* 3. Social Compliance Audit */}
-          <button
-            type="button"
-            onClick={onOpenAuditModal}
-            className="flex items-center gap-2 sm:gap-3 border border-emerald-300/80 bg-white/95 hover:bg-white px-2.5 py-2 sm:px-4 sm:py-3 rounded-xl shadow-xs text-left transition-all cursor-pointer active:scale-98"
-          >
-            <div className="flex h-7 w-7 sm:h-8 sm:w-8 shrink-0 items-center justify-center rounded-lg bg-emerald-50 border border-emerald-200">
-              <ShieldCheck className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-emerald-600" strokeWidth={2} />
-            </div>
-            <div className="min-w-0">
-              <div className="text-[7.5px] sm:text-[9px] font-bold uppercase tracking-wider text-stone-500 leading-tight">
-                Compliance Audit
-              </div>
-              <div className="mt-0.5 text-[9.5px] sm:text-xs font-bold text-stone-900 leading-snug">
-                <span className="sm:hidden">SMETA 4-Pillar</span>
-                <span className="hidden sm:inline">SMETA 4-Pillar · LRQA</span>
-              </div>
-            </div>
-          </button>
-
-        </div>
-
         {/* Hero Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           
