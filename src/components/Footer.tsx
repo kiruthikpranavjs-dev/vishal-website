@@ -63,20 +63,20 @@ export const Footer: React.FC<FooterProps> = ({ onOpenAuditModal, onOpenInquiryM
               </p>
             </div>
 
-            <div className="flex flex-wrap items-stretch gap-3 pt-1">
-              <div className="inline-flex min-w-[205px] items-center gap-3 border border-stone-300 bg-white/90 px-4 py-2.5 shadow-sm">
-                <ShieldCheck className="h-5 w-5 shrink-0 text-stone-500" strokeWidth={1.5} />
+            <div className="grid max-w-[460px] grid-cols-2 gap-2 pt-1">
+              <div className="flex min-w-0 items-center gap-2 border border-stone-300 bg-white/90 px-2.5 py-2 shadow-sm sm:gap-3 sm:px-3">
+                <ShieldCheck className="h-4 w-4 shrink-0 text-stone-500 sm:h-5 sm:w-5" strokeWidth={1.5} />
                 <div>
-                  <div className="text-[9px] font-bold uppercase tracking-[0.18em] text-stone-500">Social compliance audit</div>
-                  <div className="mt-0.5 text-xs font-semibold tracking-wide text-stone-900">LRQA Audited ({FACTORY_INFO.sedexSiteRef})</div>
+                  <div className="text-[7px] font-bold uppercase tracking-[0.12em] text-stone-500 sm:text-[9px] sm:tracking-[0.18em]">Social compliance audit</div>
+                  <div className="mt-0.5 break-words text-[9px] font-semibold leading-tight tracking-wide text-stone-900 sm:text-[11px]">LRQA Audited ({FACTORY_INFO.sedexSiteRef})</div>
                 </div>
               </div>
 
-              <div className="inline-flex min-w-[205px] items-center gap-3 border border-stone-300 bg-white/90 px-4 py-2.5 shadow-sm">
-                <Droplets className="h-5 w-5 shrink-0 text-[#A77B36]" strokeWidth={1.5} />
+              <div className="flex min-w-0 items-center gap-2 border border-stone-300 bg-white/90 px-2.5 py-2 shadow-sm sm:gap-3 sm:px-3">
+                <Droplets className="h-4 w-4 shrink-0 text-[#A77B36] sm:h-5 sm:w-5" strokeWidth={1.5} />
                 <div>
-                  <div className="text-[9px] font-bold uppercase tracking-[0.18em] text-stone-500">Water management</div>
-                  <div className="mt-0.5 text-xs font-semibold tracking-wide text-stone-900">In-House ZLD Unit</div>
+                  <div className="text-[7px] font-bold uppercase tracking-[0.12em] text-stone-500 sm:text-[9px] sm:tracking-[0.18em]">Water management</div>
+                  <div className="mt-0.5 break-words text-[9px] font-semibold leading-tight tracking-wide text-stone-900 sm:text-[11px]">In-House ZLD Unit</div>
                 </div>
               </div>
             </div>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { AboutSection } from './components/AboutSection';
@@ -19,6 +19,58 @@ export function App() {
   const [isAuditModalOpen, setIsAuditModalOpen] = useState(false);
   const [isInquiryModalOpen, setIsInquiryModalOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState<string>('');
+
+  useEffect(() => {
+    let started = false;
+    let observer: IntersectionObserver | undefined;
+
+    const beginScrollTextReveal = () => {
+      if (started) return;
+      started = true;
+
+      const textBlocks = Array.from(document.querySelectorAll<HTMLElement>(
+        'main h1, main h2, main h3, main h4, main p, main li'
+      ));
+      let pairDelay = 0;
+      const revealTargets: HTMLElement[] = [];
+
+      textBlocks.forEach((block) => {
+        // Leave the initial viewport untouched; only prepare copy further down the page.
+        if (block.getBoundingClientRect().top <= window.innerHeight * 0.88) return;
+        block.classList.add('site-scroll-text');
+        block.style.setProperty('--site-scroll-delay', `${pairDelay}ms`);
+        const lineHeight = parseFloat(getComputedStyle(block).lineHeight) || 24;
+        const highlightHeight = Math.min(lineHeight * 2, block.getBoundingClientRect().height);
+        const highlightTravel = Math.max(0, block.getBoundingClientRect().height - highlightHeight);
+        block.style.setProperty('--site-highlight-height', `${highlightHeight}px`);
+        block.style.setProperty('--site-highlight-travel', `${highlightTravel}px`);
+        pairDelay = pairDelay === 0 ? 90 : 0;
+        revealTargets.push(block);
+      });
+
+      if (!revealTargets.length) return;
+      if (!('IntersectionObserver' in window)) {
+        revealTargets.forEach(block => block.classList.add('site-scroll-text-visible'));
+        return;
+      }
+
+      observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('site-scroll-text-visible');
+          observer?.unobserve(entry.target);
+        });
+      }, { threshold: 0.08, rootMargin: '0px 0px -10% 0px' });
+
+      revealTargets.forEach(block => observer?.observe(block));
+    };
+
+    window.addEventListener('scroll', beginScrollTextReveal, { passive: true });
+    return () => {
+      window.removeEventListener('scroll', beginScrollTextReveal);
+      observer?.disconnect();
+    };
+  }, []);
 
   const handleOpenInquiryWithProduct = (productName: string) => {
     setSelectedProduct(productName);

@@ -56,27 +56,43 @@ export const RFQModal: React.FC<RFQModalProps> = ({
     const modal = panelRef.current;
     const scroller = modal?.querySelector<HTMLElement>('.rfq-modal-scroll') ?? null;
     const groups = modal?.querySelectorAll<HTMLElement>('.rfq-reveal');
-    if (!groups?.length) return;
+    if (!groups?.length || !scroller) return;
 
-    if (!('IntersectionObserver' in window)) {
-      groups.forEach(group => group.classList.add('rfq-reveal-visible'));
-      return;
-    }
+    let observer: IntersectionObserver | undefined;
+    const beginRevealOnScroll = () => {
+      scroller.removeEventListener('scroll', beginRevealOnScroll);
+      const scrollerTop = scroller.getBoundingClientRect().top;
+      const revealTargets: HTMLElement[] = [];
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('rfq-reveal-visible');
-          observer.unobserve(entry.target);
-        }
+      groups.forEach((group, index) => {
+        if (group.getBoundingClientRect().top <= scrollerTop + scroller.clientHeight * 0.88) return;
+        group.classList.add('rfq-reveal-pending');
+        group.style.setProperty('--rfq-reveal-delay', `${(index % 3) * 55}ms`);
+        revealTargets.push(group);
       });
-    }, { root: scroller, threshold: 0.12, rootMargin: '0px 0px -24px 0px' });
 
-    groups.forEach((group, index) => {
-      group.style.setProperty('--rfq-reveal-delay', `${(index % 3) * 55}ms`);
-      observer.observe(group);
-    });
-    return () => observer.disconnect();
+      if (!revealTargets.length) return;
+      if (!('IntersectionObserver' in window)) {
+        revealTargets.forEach(group => group.classList.add('rfq-reveal-visible'));
+        return;
+      }
+
+      observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('rfq-reveal-visible');
+          observer?.unobserve(entry.target);
+        });
+      }, { root: scroller, threshold: 0.12, rootMargin: '0px 0px -24px 0px' });
+
+      revealTargets.forEach(group => observer?.observe(group));
+    };
+
+    scroller.addEventListener('scroll', beginRevealOnScroll, { passive: true });
+    return () => {
+      scroller.removeEventListener('scroll', beginRevealOnScroll);
+      observer?.disconnect();
+    };
   }, [isOpen, submitted]);
 
   useEffect(() => {
