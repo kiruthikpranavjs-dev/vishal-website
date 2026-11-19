@@ -94,24 +94,24 @@
 }
 
 .site-background {
-  position: fixed;
+  position: absolute;
   z-index: 0;
   inset: 0;
-  overflow: hidden;
   pointer-events: none;
   background: #e8dfd0;
 }
 
 .site-background img {
   position: absolute;
-  top: 50%;
+  top: 0;
   left: 50%;
   width: max(140vw, 248.64vh);
-  height: auto;
+  height: 100%;
   max-width: none;
   max-height: none;
-  transform: translate3d(-50%, calc(-50% + var(--site-bg-pan-y, 0vh)), 0);
-  will-change: transform;
+  object-fit: cover;
+  object-position: center top;
+  transform: translateX(-50%);
 }
 
 .site-background::after {

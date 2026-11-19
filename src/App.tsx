@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { AboutSection } from './components/AboutSection';
@@ -19,34 +19,6 @@ export function App() {
   const [isAuditModalOpen, setIsAuditModalOpen] = useState(false);
   const [isInquiryModalOpen, setIsInquiryModalOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState<string>('');
-
-  useEffect(() => {
-    const root = document.documentElement;
-    let frame = 0;
-
-    const updateBackgroundPosition = () => {
-      if (frame) return;
-      frame = window.requestAnimationFrame(() => {
-        const scrollRange = Math.max(1, root.scrollHeight - window.innerHeight);
-        const progress = Math.min(1, Math.max(0, window.scrollY / scrollRange));
-        const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-        const panRange = window.matchMedia('(max-aspect-ratio: 3/4)').matches ? 12 : 18;
-        root.style.setProperty('--site-bg-pan-y', reducedMotion ? '0vh' : `${-progress * panRange}vh`);
-        frame = 0;
-      });
-    };
-
-    window.addEventListener('scroll', updateBackgroundPosition, { passive: true });
-    window.addEventListener('resize', updateBackgroundPosition);
-    updateBackgroundPosition();
-
-    return () => {
-      window.removeEventListener('scroll', updateBackgroundPosition);
-      window.removeEventListener('resize', updateBackgroundPosition);
-      if (frame) window.cancelAnimationFrame(frame);
-      root.style.removeProperty('--site-bg-pan-y');
-    };
-  }, []);
 
   const handleOpenInquiryWithProduct = (productName: string) => {
     setSelectedProduct(productName);
