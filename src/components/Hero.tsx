@@ -84,7 +84,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAuditModal, onOpenInquiryModal
               </div>
               <div className="flex items-center space-x-2.5">
                 <CheckCircle2 className="w-4 h-4 text-[#93452E] shrink-0" />
-                <span>In-House Testing Laboratory (AQL 1.5)</span>
+                <span>In-House Quality Testing (AQL 1.5)</span>
               </div>
             </div>
 

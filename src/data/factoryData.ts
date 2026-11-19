@@ -50,7 +50,7 @@ export interface WhyChooseUsItem {
 export interface GalleryItem {
   id: string;
   title: string;
-  category: 'Garments' | 'Knitting & Dyeing' | 'Printing & Detailing' | 'Sewing & Finishing' | 'Quality Lab' | 'Facility';
+  category: 'Garments' | 'Knitting & Dyeing' | 'Printing & Detailing' | 'Sewing & Finishing' | 'Quality Testing' | 'Facility';
   image: string;
   caption: string;
 }
@@ -449,15 +449,15 @@ export const MANUFACTURING_STAGES: ManufacturingStageItem[] = [
   },
   {
     letter: "I",
-    title: "Laboratory",
-    subtitle: "In-House Physical & Chemical Testing",
-    description: "We have an internal lab in our factory premises. From fabric to finishing the garment we do test as per buyer requirement. Our dedicated QC team monitors garments at every stage and follows strict AQL 1.5 standards.",
-    equipment: "In-house lab wash-wheels, conditioning tumblers, GSM balances, and Crockmeters",
+    title: "Quality Testing",
+    subtitle: "In-House Physical & Dimensional Checks",
+    description: "We conduct in-house testing directly within our factory premises. From fabric to finishing the garment we test as per buyer requirement. Our dedicated QC team monitors garments at every stage and follows strict AQL 1.5 standards.",
+    equipment: "In-house wash-wheels, conditioning tumblers, GSM balances, and Crockmeters",
     bulletPoints: [
-      "In-house internal lab right inside our Factory premises",
+      "In-house testing directly inside our factory premises",
       "From Fabric to Finishing the garment we test as per buyer requirement",
       "Strict AQL 1.5 Standards monitored by dedicated QC team",
-      "Tests for GSM, shrinkage, Spirality, color fastness, and more"
+      "Tests for GSM, shrinkage, spirality, color fastness, and more"
     ],
     image: "/images/factory/testing-laboratory.jpg"
   }
@@ -499,11 +499,11 @@ export const WHY_CHOOSE_US_ITEMS: WhyChooseUsItem[] = [
   },
   {
     number: "05",
-    title: "Dedicated Testing Laboratory",
+    title: "In-House Quality Testing",
     headline: "Fabric-to-Finishing Testing in Factory",
-    description: "Internal lab within factory premises testing GSM, shrinkage, spirality, and wash-fastness strictly conforming to international buyer specifications.",
-    metric: "Lab",
-    metricLabel: "Internal Testing Facility"
+    description: "In-house testing within factory premises checking GSM, shrinkage, spirality, and wash-fastness strictly conforming to international buyer specifications.",
+    metric: "In-House",
+    metricLabel: "Internal Testing"
   },
   {
     number: "06",
@@ -591,15 +591,15 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     id: "g9",
-    title: "In-House Fabric & Garment Testing Lab",
-    category: "Quality Lab",
+    title: "In-House Fabric & Garment Testing",
+    category: "Quality Testing",
     image: "/images/factory/testing-laboratory.jpg",
-    caption: "Factory testing lab verifying GSM, shrinkage, spirality, and fastness."
+    caption: "In-house testing verifying GSM, shrinkage, spirality, and fastness."
   },
   {
     id: "g10",
     title: "Strict AQL 1.5 Quality Inspection",
-    category: "Quality Lab",
+    category: "Quality Testing",
     image: "/images/factory/quality-inspection.jpg",
     caption: "Dedicated quality supervisors conducting end-of-line measurement audits."
   },

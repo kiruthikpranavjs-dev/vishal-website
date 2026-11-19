@@ -72,20 +72,20 @@ export const QualitySection: React.FC = () => {
                 </div>
               </div>
 
-              {/* Photo 2: Testing Lab washing machines */}
+              {/* Photo 2: Testing equipment */}
               <div className="relative rounded-2xl overflow-hidden shadow-lg border border-stone-300 bg-stone-100 aspect-[3/4]">
                 <img
                   src="/images/factory/testing-laboratory.jpg"
-                  alt="In-house internal fabric testing lab at Bullet Impex factory"
+                  alt="In-house internal fabric testing at Bullet Impex factory"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                 <div className="absolute bottom-3 left-3 right-3 text-white">
                   <span className="text-[10px] font-mono uppercase tracking-widest text-stone-300 block">
-                    In-House Laboratory
+                    In-House Testing
                   </span>
                   <span className="text-xs font-bold">
-                    Fabric-to-Finishing Testing
+                    Fabric-to-Finishing Checks
                   </span>
                 </div>
               </div>
@@ -94,7 +94,7 @@ export const QualitySection: React.FC = () => {
 
             <div className="p-4 rounded-xl bg-stone-100 border border-stone-200 text-xs text-stone-600 flex items-center justify-between">
               <span className="font-semibold text-stone-800">
-                Factory Premises Laboratory:
+                In-House Quality Testing:
               </span>
               <span className="font-mono text-[#93452E] font-bold">
                 Tested As Per Buyer Requirements
@@ -125,7 +125,7 @@ export const QualitySection: React.FC = () => {
                   02
                 </div>
                 <h3 className="font-bold text-stone-900 text-base">
-                  Internal Factory Testing Laboratory
+                  In-House Quality Testing
                 </h3>
               </div>
               <p className="text-xs sm:text-sm text-stone-600 leading-relaxed pl-11">
@@ -170,14 +170,14 @@ export const QualitySection: React.FC = () => {
           <div className="mb-6 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
             <div>
               <h3 className="font-serif text-xl sm:text-2xl font-bold text-stone-900">
-                In-House Laboratory Testing Parameters
+                In-House Quality Testing Parameters
               </h3>
               <p className="text-xs text-stone-500 mt-0.5">
                 Conducted systematically inside our factory premises for every production lot.
               </p>
             </div>
             <span className="text-xs font-mono font-semibold px-2.5 py-1 rounded bg-white text-stone-700 border border-stone-300">
-              Lab Standard: ISO / ASTM / Buyer Manual
+              Standard: ISO / ASTM / Buyer Manual
             </span>
           </div>
 

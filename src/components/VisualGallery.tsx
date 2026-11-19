@@ -12,7 +12,7 @@ export const VisualGallery: React.FC = () => {
     'Knitting & Dyeing',
     'Printing & Detailing',
     'Sewing & Finishing',
-    'Quality Lab',
+    'Quality Testing',
     'Facility'
   ];
 

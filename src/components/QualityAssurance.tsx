@@ -73,16 +73,16 @@ export const QualityAssurance: React.FC = () => {
               <div className="relative rounded-2xl overflow-hidden shadow-xl border border-stone-300 bg-white aspect-[3/4] group">
                 <img
                   src="/images/factory/testing-laboratory.jpg"
-                  alt="In-house internal fabric testing lab"
+                  alt="In-house internal fabric testing"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
                 <div className="absolute bottom-3 left-3 right-3 text-white">
                   <span className="text-[10px] font-mono uppercase tracking-widest text-stone-300 block">
-                    Internal Lab
+                    In-House Testing
                   </span>
                   <span className="text-xs font-bold">
-                    Fabric to Finishing Testing
+                    Fabric to Finishing Checks
                   </span>
                 </div>
               </div>
@@ -121,11 +121,11 @@ export const QualityAssurance: React.FC = () => {
                   02
                 </div>
                 <h3 className="font-bold text-stone-900 text-base">
-                  In-House Internal Laboratory
+                  In-House Quality Testing
                 </h3>
               </div>
               <p className="text-xs sm:text-sm text-stone-600 leading-relaxed pl-11">
-                Operating directly inside our factory premises, our lab evaluates fabrics from raw yarn to finished garments, testing physical, chemical, and dimensional characteristics against buyer manuals.
+                Conducted directly inside our factory premises, our in-house testing evaluates fabrics from raw yarn to finished garments, verifying physical, chemical, and dimensional characteristics against buyer manuals.
               </p>
             </div>
 
@@ -161,12 +161,12 @@ export const QualityAssurance: React.FC = () => {
 
         </div>
 
-        {/* 4 Laboratory Testing Parameters Cards */}
+        {/* Core In-House Testing Parameters Cards */}
         <div className="bg-white rounded-3xl p-8 sm:p-10 border border-stone-300 shadow-lg">
           <div className="mb-6 flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-4 border-b border-stone-200">
             <div>
               <h3 className="font-serif text-2xl font-bold text-stone-900">
-                Core Laboratory Testing Parameters
+                Core In-House Testing Parameters
               </h3>
               <p className="text-xs text-stone-500 mt-0.5">
                 Conducted in-house as per buyer requirement and international testing standards.
