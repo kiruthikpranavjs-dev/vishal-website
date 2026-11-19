@@ -22,20 +22,22 @@ export const AboutSection: React.FC = () => {
           <div className="lg:col-span-5 relative">
             <div className="space-y-4">
               
-              {/* Primary Image: Mayer & Cie German Knitting Machines in action */}
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-white aspect-[4/3] group">
-                <img
-                  src="/images/factory/knitting-machines.jpg"
-                  alt="30 Mayer and Cie German circular knitting machines at Bullet Impex"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-transparent to-transparent"></div>
+              {/* Primary Plant Feature: Mayer & Cie German Knitting Machines */}
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-[#251B15] aspect-[4/3] p-6 sm:p-7 flex flex-col justify-between">
+                <div className="flex items-center justify-between">
+                  <div className="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center border border-white/10">
+                    <Cpu className="w-5 h-5 text-amber-400" />
+                  </div>
+                  <span className="text-[10px] font-mono tracking-widest uppercase text-stone-400 bg-white/5 px-2.5 py-1 rounded-md border border-white/10">
+                    German & Japanese Fleet
+                  </span>
+                </div>
                 
-                <div className="absolute bottom-4 left-4 right-4 text-white">
-                  <span className="text-[10px] font-mono tracking-widest uppercase text-stone-300 block">
+                <div>
+                  <span className="text-[10px] font-mono tracking-widest uppercase text-amber-400 block font-semibold">
                     Knitting Department
                   </span>
-                  <span className="text-sm font-bold">
+                  <span className="text-base sm:text-lg font-bold text-white block mt-1 leading-snug">
                     30 Mayer & Cie (Germany) + 7 Shima Seiki (Japan)
                   </span>
                 </div>
@@ -53,15 +55,17 @@ export const AboutSection: React.FC = () => {
                   </p>
                 </div>
 
-                <div className="relative rounded-2xl overflow-hidden shadow-sm border border-stone-300 bg-stone-100 aspect-[4/3]">
-                  <img
-                    src="/images/factory/yarn-cones.jpg"
-                    alt="Tested yarn spools at Bullet Impex"
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-black/25"></div>
-                  <div className="absolute bottom-2 left-2 right-2 text-white text-[11px] font-bold leading-tight">
-                    Tested Combed Yarns
+                <div className="relative rounded-2xl overflow-hidden shadow-sm border border-stone-300 bg-[#34251C] aspect-[4/3] p-5 flex flex-col justify-between">
+                  <div className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center border border-white/10">
+                    <Layers className="w-4 h-4 text-amber-400" />
+                  </div>
+                  <div>
+                    <span className="text-[9px] font-mono tracking-widest uppercase text-stone-400 block font-semibold">
+                      Raw Materials
+                    </span>
+                    <div className="text-xs sm:text-sm font-bold text-white mt-0.5 leading-tight">
+                      Tested Combed Yarns
+                    </div>
                   </div>
                 </div>
               </div>

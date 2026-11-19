@@ -102,36 +102,26 @@ export const VisualGallery: React.FC = () => {
               <div
                 key={item.id}
                 onClick={() => handleOpenLightbox(item)}
-                className={`group relative rounded-3xl overflow-hidden bg-stone-200 cursor-pointer shadow-xs hover:shadow-2xl transition-all duration-300 border border-stone-300 ${
+                className={`group relative rounded-3xl overflow-hidden bg-gradient-to-br from-[#2D2018] to-[#1C140F] p-6 sm:p-7 flex flex-col justify-between cursor-pointer shadow-xs hover:shadow-2xl transition-all duration-300 border border-stone-300 ${
                   isSpan ? 'md:col-span-2 aspect-[16/9]' : 'aspect-[4/3]'
                 }`}
               >
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  loading="lazy"
-                />
-
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-85 group-hover:opacity-95 transition-opacity"></div>
-
-                {/* Category Pill */}
-                <div className="absolute top-4 left-4 bg-[#34251C]/90 backdrop-blur-xs text-white text-[10px] font-mono uppercase tracking-wider px-3 py-1 rounded-full font-semibold">
-                  {item.category}
-                </div>
-
-                {/* Zoom Icon */}
-                <div className="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/20 backdrop-blur-xs flex items-center justify-center text-white opacity-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300">
-                  <Maximize2 className="w-4 h-4" />
+                {/* Header: Category Pill & Zoom Icon */}
+                <div className="flex items-center justify-between">
+                  <div className="bg-white/10 backdrop-blur-xs text-amber-300 border border-white/10 text-[10px] font-mono uppercase tracking-wider px-3 py-1 rounded-full font-semibold">
+                    {item.category}
+                  </div>
+                  <div className="w-9 h-9 rounded-full bg-white/10 backdrop-blur-xs flex items-center justify-center text-white group-hover:scale-110 transition-all duration-300">
+                    <Maximize2 className="w-4 h-4" />
+                  </div>
                 </div>
 
                 {/* Caption Content */}
-                <div className="absolute bottom-5 left-5 right-5 text-white">
-                  <h3 className="text-xl sm:text-2xl font-bold leading-tight group-hover:text-red-200 transition-colors">
+                <div className="text-white">
+                  <h3 className="text-xl sm:text-2xl font-bold leading-tight group-hover:text-amber-300 transition-colors">
                     {item.title}
                   </h3>
-                  <p className="text-xs text-stone-300 mt-1 line-clamp-2 leading-relaxed">
+                  <p className="text-xs text-stone-300 mt-2 line-clamp-2 leading-relaxed">
                     {item.caption}
                   </p>
                 </div>
@@ -175,24 +165,17 @@ export const VisualGallery: React.FC = () => {
             <ChevronLeft className="w-6 h-6" />
           </button>
 
-          {/* Center Content */}
-          <div className="max-w-5xl w-full max-h-[85vh] flex flex-col items-center">
-            <div className="relative max-h-[68vh] rounded-2xl overflow-hidden shadow-2xl bg-stone-900 border border-stone-800">
-              <img
-                src={GALLERY_ITEMS[activeLightboxIndex].image}
-                alt={GALLERY_ITEMS[activeLightboxIndex].title}
-                className="max-h-[68vh] w-auto object-contain mx-auto"
-              />
-            </div>
-
-            <div className="mt-4 text-center max-w-2xl px-4">
-              <h3 className="text-xl sm:text-2xl font-bold text-white">
-                {GALLERY_ITEMS[activeLightboxIndex].title}
-              </h3>
-              <p className="text-xs sm:text-sm text-stone-300 mt-1 leading-relaxed">
-                {GALLERY_ITEMS[activeLightboxIndex].caption}
-              </p>
-            </div>
+          {/* Center Content (Skeleton Preserved) */}
+          <div className="max-w-2xl w-full p-8 rounded-3xl bg-gradient-to-br from-[#2D2018] to-[#1C140F] border border-stone-700 shadow-2xl text-center">
+            <span className="font-mono text-xs uppercase tracking-widest text-amber-300 bg-white/10 px-3.5 py-1.5 rounded-full font-bold inline-block mb-4">
+              {GALLERY_ITEMS[activeLightboxIndex].category}
+            </span>
+            <h3 className="text-2xl sm:text-3xl font-bold text-white leading-snug">
+              {GALLERY_ITEMS[activeLightboxIndex].title}
+            </h3>
+            <p className="text-sm text-stone-300 mt-3 leading-relaxed">
+              {GALLERY_ITEMS[activeLightboxIndex].caption}
+            </p>
           </div>
 
           {/* Right Arrow */}

@@ -538,7 +538,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     title: "Bullet Impex Factory Facility",
     category: "Facility",
     image: "/images/factory/factory-building.jpg",
-    caption: "Multi-floor integrated garment manufacturing plant in Mannarai, Tiruppur."
+    caption: "Multi-floor integrated garment manufacturing plant in Palayakadu, Tiruppur."
   },
   {
     id: "g2",

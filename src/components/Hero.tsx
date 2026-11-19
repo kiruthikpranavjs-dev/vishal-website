@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Download, ChevronDown, CheckCircle2, MapPin, Award } from 'lucide-react';
+import { ArrowRight, Download, ChevronDown, CheckCircle2, MapPin, Award, ShieldCheck } from 'lucide-react';
 import { FACTORY_INFO } from '../data/factoryData';
 
 interface HeroProps {
@@ -35,7 +35,9 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAuditModal, onOpenInquiryModal
             onClick={onOpenAuditModal}
             className="inline-flex min-w-[235px] items-center gap-3 border border-stone-300 bg-white/80 px-4 py-2.5 text-left shadow-sm transition-colors hover:bg-white cursor-pointer"
           >
-            <img src="/images/factory/sedex-badge.jpg" alt="Sedex member badge" className="h-10 w-10 shrink-0 object-contain" />
+            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-emerald-50 text-emerald-700 border border-emerald-200">
+              <ShieldCheck className="h-5 w-5" strokeWidth={2} />
+            </div>
             <div>
               <div className="text-[9px] font-bold uppercase tracking-[0.18em] text-stone-500">Social compliance audit</div>
               <div className="mt-0.5 text-xs font-semibold tracking-wide text-stone-900">SMETA 4-Pillar · LRQA</div>
@@ -125,14 +127,14 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAuditModal, onOpenInquiryModal
               <div className="overflow-hidden border border-[#D8C7AE] bg-[#E8DFD2]">
                 <img
                   src="/images/factory/factory-building.jpg"
-                  alt="Bullet Impex factory facility in Mannarai, Tiruppur"
+                  alt="Bullet Impex factory facility in Palayakadu, Tiruppur"
                   className="block h-auto w-full object-contain"
                 />
               </div>
               <figcaption className="flex items-center justify-between gap-4 px-2 pt-3 pb-1">
                 <div>
                   <div className="text-[9px] font-bold uppercase tracking-[0.2em] text-[#93452E]">Integrated production facility</div>
-                  <div className="mt-1 text-base font-semibold text-[#34251C]">Mannarai, Tiruppur</div>
+                  <div className="mt-1 text-base font-semibold text-[#34251C]">Palayakadu, Tiruppur</div>
                 </div>
                 <span className="h-px w-12 shrink-0 bg-[#93452E]/55" aria-hidden="true" />
               </figcaption>

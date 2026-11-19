@@ -54,32 +54,23 @@ export const ProductCollections: React.FC<ProductCollectionsProps> = ({ onSelect
                 className={`${colSpan} group bg-white rounded-3xl border border-stone-200/90 overflow-hidden shadow-xs hover:shadow-2xl hover:border-stone-400 transition-all duration-300 flex flex-col justify-between`}
               >
                 <div>
-                  {/* Image Container with Editorial Zoom & Details */}
-                  <div className={`relative w-full overflow-hidden bg-stone-100 ${
+                  {/* Category Header Frame (Skeleton Preserved) */}
+                  <div className={`relative w-full overflow-hidden bg-gradient-to-br from-[#3D2C22] to-[#251B15] p-6 flex flex-col justify-between ${
                     index === 0 ? 'aspect-[16/10]' : (cat.proportion === 'landscape' ? 'aspect-[16/11]' : 'aspect-[4/3]')
                   }`}>
-                    <img
-                      src={cat.image}
-                      alt={cat.name}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                      loading="lazy"
-                    />
+                    {/* Header Top: Category Label Pill & GSM Range Badge */}
+                    <div className="flex items-center justify-between">
+                      <div className="bg-white/10 backdrop-blur-xs text-amber-300 border border-white/10 px-3 py-1 rounded-full text-[11px] font-mono uppercase tracking-wider font-semibold">
+                        {cat.name}
+                      </div>
 
-                    {/* Gradient overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
-
-                    {/* Category Label Pill */}
-                    <div className="absolute top-4 left-4 bg-[#34251C]/90 backdrop-blur-xs text-white px-3 py-1 rounded-full text-[11px] font-mono uppercase tracking-wider font-semibold">
-                      {cat.name}
+                      <div className="bg-white/95 text-[#34251C] font-mono font-bold text-xs px-2.5 py-1 rounded-lg shadow-xs border border-stone-200">
+                        {cat.gsmRange}
+                      </div>
                     </div>
 
-                    {/* GSM Range Badge */}
-                    <div className="absolute top-4 right-4 bg-white/95 backdrop-blur-xs text-[#34251C] font-mono font-bold text-xs px-2.5 py-1 rounded-lg shadow-xs border border-stone-200">
-                      {cat.gsmRange}
-                    </div>
-
-                    {/* Title inside image for editorial feel */}
-                    <div className="absolute bottom-4 left-4 right-4 text-white">
+                    {/* Title inside frame */}
+                    <div className="text-white">
                       <div className="text-[11px] font-mono text-stone-300 uppercase tracking-widest">
                         {cat.tagline}
                       </div>
@@ -146,28 +137,27 @@ export const ProductCollections: React.FC<ProductCollectionsProps> = ({ onSelect
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-in fade-in duration-200">
           <div className="bg-white rounded-3xl max-w-2xl w-full overflow-hidden shadow-2xl border border-stone-300 relative my-8">
             
-            {/* Modal Header Image */}
-            <div className="relative h-64 bg-stone-100 overflow-hidden">
-              <img
-                src={selectedCategory.image}
-                alt={selectedCategory.name}
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-              
-              <button
-                onClick={() => setSelectedCategory(null)}
-                className="absolute top-4 right-4 p-2 rounded-full bg-black/50 hover:bg-black/80 text-white transition-colors cursor-pointer"
-                aria-label="Close"
-              >
-                <X className="w-5 h-5" />
-              </button>
+            {/* Modal Header (Skeleton Preserved) */}
+            <div className="relative h-44 sm:h-52 bg-gradient-to-br from-[#3D2C22] to-[#251B15] p-6 sm:p-8 flex flex-col justify-between overflow-hidden">
+              <div className="flex items-center justify-between">
+                <span className="font-mono text-xs uppercase tracking-widest text-amber-300 bg-white/10 px-3 py-1 rounded-full font-bold">
+                  {selectedCategory.name} · {selectedCategory.gsmRange}
+                </span>
 
-              <div className="absolute bottom-4 left-6 right-6 text-white">
-                <span className="text-xs font-mono uppercase tracking-widest text-[#93452E] font-bold bg-white px-2 py-0.5 rounded">
+                <button
+                  onClick={() => setSelectedCategory(null)}
+                  className="p-2 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors cursor-pointer"
+                  aria-label="Close"
+                >
+                  <X className="w-5 h-5" />
+                </button>
+              </div>
+
+              <div>
+                <span className="text-stone-300 font-mono text-xs tracking-widest uppercase block">
                   {selectedCategory.tagline}
                 </span>
-                <h3 className="text-3xl font-bold mt-2">
+                <h3 className="text-2xl sm:text-3xl font-bold text-white mt-1">
                   {selectedCategory.name}
                 </h3>
               </div>

@@ -53,35 +53,29 @@ export const QualityAssurance: React.FC = () => {
           {/* Left: Authentic In-House Lab & Measurement Inspection Photos */}
           <div className="lg:col-span-5 space-y-4">
             <div className="grid grid-cols-2 gap-4">
-              <div className="relative rounded-2xl overflow-hidden shadow-xl border border-stone-300 bg-white aspect-[3/4] group">
-                <img
-                  src="/images/factory/quality-inspection.jpg"
-                  alt="Quality inspection and measurement at Bullet Impex"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
-                <div className="absolute bottom-3 left-3 right-3 text-white">
-                  <span className="text-[10px] font-mono uppercase tracking-widest text-stone-300 block">
+              <div className="relative rounded-2xl overflow-hidden shadow-xl border border-stone-300 bg-[#2B1F17] aspect-[3/4] p-5 flex flex-col justify-between">
+                <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center border border-white/10">
+                  <CheckCircle2 className="w-5 h-5 text-amber-400" />
+                </div>
+                <div>
+                  <span className="text-[10px] font-mono uppercase tracking-widest text-amber-400 block font-semibold">
                     Inspection Floor
                   </span>
-                  <span className="text-xs font-bold">
+                  <span className="text-sm font-bold text-white block mt-1 leading-snug">
                     Strict AQL 1.5 Benchmarks
                   </span>
                 </div>
               </div>
 
-              <div className="relative rounded-2xl overflow-hidden shadow-xl border border-stone-300 bg-white aspect-[3/4] group">
-                <img
-                  src="/images/factory/testing-laboratory.jpg"
-                  alt="In-house internal fabric testing"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
-                <div className="absolute bottom-3 left-3 right-3 text-white">
-                  <span className="text-[10px] font-mono uppercase tracking-widest text-stone-300 block">
+              <div className="relative rounded-2xl overflow-hidden shadow-xl border border-stone-300 bg-[#34251C] aspect-[3/4] p-5 flex flex-col justify-between">
+                <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center border border-white/10">
+                  <ShieldCheck className="w-5 h-5 text-emerald-400" />
+                </div>
+                <div>
+                  <span className="text-[10px] font-mono uppercase tracking-widest text-emerald-400 block font-semibold">
                     In-House Testing
                   </span>
-                  <span className="text-xs font-bold">
+                  <span className="text-sm font-bold text-white block mt-1 leading-snug">
                     Fabric to Finishing Checks
                   </span>
                 </div>

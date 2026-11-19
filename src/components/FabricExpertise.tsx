@@ -104,20 +104,22 @@ export const FabricExpertise: React.FC<FabricExpertiseProps> = ({ onSelectFabric
                 </div>
               </div>
 
-              {/* Macro Fabric Image Frame */}
-              <div className="relative h-56 rounded-xl overflow-hidden border border-stone-200 bg-stone-100 shadow-inner">
-                <img
-                  src={activeFabric.image}
-                  alt={activeFabric.name}
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                <div className="absolute bottom-3 left-4 right-4 text-white">
-                  <span className="text-[10px] font-mono uppercase tracking-widest text-stone-300 block">
-                    Macro Knitted Texture
+              {/* Macro Fabric Spec Frame (Skeleton Preserved) */}
+              <div className="relative h-48 sm:h-52 rounded-xl overflow-hidden border border-stone-300 bg-[#34251C] p-6 flex flex-col justify-between shadow-xs">
+                <div className="flex items-center justify-between">
+                  <span className="text-[10px] font-mono uppercase tracking-widest text-amber-400 font-semibold bg-white/10 px-2.5 py-1 rounded border border-white/10">
+                    Knitted Structure: {activeFabric.structure}
                   </span>
-                  <span className="text-xs font-bold">
-                    Target Applications: {activeFabric.applications}
+                  <span className="text-[10px] font-mono text-stone-300 uppercase tracking-widest">
+                    Gauge & Yarn Certified
+                  </span>
+                </div>
+                <div className="text-white">
+                  <span className="text-[10px] font-mono uppercase tracking-widest text-stone-400 block font-semibold">
+                    Target Applications
+                  </span>
+                  <span className="text-sm sm:text-base font-bold text-white mt-0.5 block">
+                    {activeFabric.applications}
                   </span>
                 </div>
               </div>

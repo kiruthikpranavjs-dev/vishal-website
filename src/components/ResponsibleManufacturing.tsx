@@ -109,23 +109,25 @@ export const ResponsibleManufacturing: React.FC<ResponsibleManufacturingProps> =
                 Social Responsibility Documentation
               </span>
 
-              <div className="p-3 bg-white rounded-2xl border border-stone-200 shadow-sm">
-                <img
-                  src="/images/factory/sedex-badge.jpg"
-                  alt="Sedex official badge"
-                  className="h-20 w-auto object-contain mx-auto"
-                />
-                <span className="text-[11px] font-mono font-bold text-stone-700 mt-1 block">
+              <div className="p-4 bg-white rounded-2xl border border-stone-200 shadow-sm w-full text-center">
+                <div className="w-12 h-12 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-700 flex items-center justify-center mx-auto mb-2">
+                  <ShieldCheck className="w-6 h-6" />
+                </div>
+                <div className="text-xs font-bold text-stone-900 uppercase tracking-wider">
+                  Sedex Member
+                </div>
+                <span className="text-[11px] font-mono font-bold text-stone-600 mt-0.5 block">
                   Site Ref: {FACTORY_INFO.sedexSiteRef}
                 </span>
               </div>
 
-              <div className="p-3 bg-white rounded-2xl border border-stone-200 shadow-sm w-full">
-                <img
-                  src="/images/factory/sedex-smeta-pillar.jpg"
-                  alt="SMETA 4-Pillar audited"
-                  className="h-12 w-auto object-contain mx-auto"
-                />
+              <div className="p-4 bg-white rounded-2xl border border-stone-200 shadow-sm w-full text-center">
+                <div className="text-xs font-bold font-mono text-[#93452E] uppercase tracking-wider">
+                  SMETA 4-Pillar
+                </div>
+                <div className="text-[11px] font-medium text-stone-600 mt-1">
+                  Labour · Health & Safety · Environment · Ethics
+                </div>
               </div>
 
               <span className="text-[11px] text-stone-500 leading-tight block">

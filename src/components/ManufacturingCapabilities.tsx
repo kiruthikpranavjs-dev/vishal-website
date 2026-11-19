@@ -67,28 +67,40 @@ export const ManufacturingCapabilities: React.FC = () => {
         <div className="bg-white rounded-3xl border border-stone-300 shadow-2xl overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-12">
             
-            {/* Left Column: Authentic Machine & Department Photography */}
-            <div className="lg:col-span-6 relative bg-stone-100 min-h-[380px] sm:min-h-[480px]">
-              <img
-                src={stage.image}
-                alt={stage.title}
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent"></div>
-
+            {/* Left Column: Department Industrial Overview (Skeleton Preserved) */}
+            <div className="lg:col-span-6 relative bg-gradient-to-br from-[#2D2018] to-[#1C140F] min-h-[380px] sm:min-h-[480px] p-8 sm:p-10 flex flex-col justify-between">
               {/* Machinery Brand Tag */}
-              <div className="absolute top-5 left-5 bg-[#34251C]/90 backdrop-blur-xs text-white px-3.5 py-1.5 rounded-xl border border-white/20 shadow-xs">
-                <span className="text-[10px] font-mono text-stone-300 uppercase tracking-widest block font-semibold">
-                  Machinery Setup
+              <div className="flex items-center justify-between">
+                <div className="bg-white/10 backdrop-blur-xs text-white px-3.5 py-1.5 rounded-xl border border-white/15 shadow-xs">
+                  <span className="text-[10px] font-mono text-stone-300 uppercase tracking-widest block font-semibold">
+                    Machinery Setup
+                  </span>
+                  <span className="text-xs font-bold font-mono text-amber-400">
+                    {stage.title} Department
+                  </span>
+                </div>
+
+                <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-amber-400 border border-white/10">
+                  <Cpu className="w-5 h-5" />
+                </div>
+              </div>
+
+              {/* Center description */}
+              <div className="space-y-3 py-6">
+                <span className="text-xs font-mono uppercase tracking-[0.2em] text-stone-400 block font-semibold">
+                  Facility Workflow Stage
                 </span>
-                <span className="text-xs font-bold font-mono">
-                  {stage.title} Department
-                </span>
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight leading-tight">
+                  {stage.title} Infrastructure
+                </h3>
+                <p className="text-sm text-stone-300 leading-relaxed max-w-md">
+                  Integrated high-speed production lines engineered for tight dimensional tolerances and international export specifications.
+                </p>
               </div>
 
               {/* Daily Capacity Badge (Cutting: 5,000, Sewing: 4,500, Finishing: 4,500) */}
               {stage.capacity && (
-                <div className="absolute bottom-5 left-5 bg-[#93452E] text-white px-4 py-2 rounded-xl shadow-lg">
+                <div className="bg-[#93452E] text-white px-4 py-2.5 rounded-xl shadow-lg self-start border border-red-400/30">
                   <span className="text-[10px] font-mono uppercase tracking-widest text-red-200 block font-semibold">
                     Stated Daily Capacity
                   </span>

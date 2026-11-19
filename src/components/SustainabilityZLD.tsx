@@ -86,18 +86,22 @@ export const SustainabilityZLD: React.FC = () => {
 
             {/* Right Column: Authentic Wet Processing Photo & System Metrics */}
             <div className="lg:col-span-5 space-y-4">
-              <div className="relative rounded-2xl overflow-hidden border-2 border-stone-700 aspect-[4/3] bg-stone-900 shadow-xl group">
-                <img
-                  src="/images/factory/dyeing-unit.jpg"
-                  alt="Eco wet processing dyeing vessel with Zero Liquid Discharge"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-                <div className="absolute bottom-4 left-4 right-4 text-white">
-                  <span className="text-[10px] font-mono uppercase tracking-widest text-emerald-300 block">
+              {/* ZLD Plant Executive Frame (Skeleton Preserved) */}
+              <div className="relative rounded-2xl overflow-hidden border-2 border-stone-700 aspect-[4/3] bg-[#161B18] shadow-xl p-6 sm:p-7 flex flex-col justify-between">
+                <div className="flex items-center justify-between">
+                  <div className="w-11 h-11 rounded-xl bg-emerald-500/10 flex items-center justify-center border border-emerald-500/20 text-emerald-400">
+                    <Droplets className="w-6 h-6" />
+                  </div>
+                  <span className="text-[10px] font-mono uppercase tracking-widest text-emerald-400 font-semibold bg-emerald-950/60 px-3 py-1 rounded-full border border-emerald-800/40">
+                    100% Water Recovery
+                  </span>
+                </div>
+
+                <div>
+                  <span className="text-[10px] font-mono uppercase tracking-widest text-emerald-300 block font-semibold">
                     Own Wet Processing Unit
                   </span>
-                  <span className="text-sm font-bold">
+                  <span className="text-base sm:text-lg font-bold text-white block mt-1">
                     Eco Wet Processing & Dyeing (ZLD)
                   </span>
                 </div>
