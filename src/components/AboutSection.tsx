@@ -95,7 +95,7 @@ export const AboutSection: React.FC = () => {
                   <Layers className="w-4 h-4 text-[#93452E]" />
                   <span>Integrated Facility</span>
                 </div>
-                <p className="text-[11px] text-stone-600 leading-relaxed">
+                <p className="text-[11px] text-stone-700 font-medium leading-relaxed">
                   Knitting, dyeing, cutting, embroidery, stitching, and finishing under one roof in Tiruppur.
                 </p>
               </div>
@@ -105,7 +105,7 @@ export const AboutSection: React.FC = () => {
                   <Droplets className="w-4 h-4 text-emerald-600" />
                   <span>Eco-Friendly ZLD Dyeing</span>
                 </div>
-                <p className="text-[11px] text-stone-600 leading-relaxed">
+                <p className="text-[11px] text-stone-700 font-medium leading-relaxed">
                   Own wet processing unit operating Zero Liquid Discharge with 100% water recovery.
                 </p>
               </div>
@@ -115,7 +115,7 @@ export const AboutSection: React.FC = () => {
                   <ShieldCheck className="w-4 h-4 text-emerald-600" />
                   <span>SMETA 4-Pillar Audited</span>
                 </div>
-                <p className="text-[11px] text-stone-600 leading-relaxed">
+                <p className="text-[11px] text-stone-700 font-medium leading-relaxed">
                   Audited by LRQA across labour, health & safety, environment 4-pillar, and business ethics.
                 </p>
               </div>
@@ -125,7 +125,7 @@ export const AboutSection: React.FC = () => {
                   <Cpu className="w-4 h-4 text-[#93452E]" />
                   <span>Modern Fleet</span>
                 </div>
-                <p className="text-[11px] text-stone-600 leading-relaxed">
+                <p className="text-[11px] text-stone-700 font-medium leading-relaxed">
                   30 Mayer & Cie, 7 Shima Seiki, 40-head Barudan/Tajima, and 50+ computerized stitching stations.
                 </p>
               </div>

@@ -60,16 +60,16 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAuditModal, onOpenInquiryModal
               </h1>
             </div>
 
-            <p className="text-sm sm:text-base font-bold text-stone-900 tracking-wide">
+            <p className="text-sm sm:text-base font-bold text-stone-950 tracking-wide">
               18+ Years of Expertise in Knitted Garment Manufacturing.
             </p>
 
-            <p className="text-base sm:text-lg text-stone-800 leading-relaxed font-normal max-w-2xl">
+            <p className="text-base sm:text-lg text-stone-900 leading-relaxed font-medium max-w-2xl">
               An established apparel manufacturing and export company based in Tiruppur, India. Combining the visual finesse of a premium international fashion brand with vertically integrated production—from German circular knitting and Zero Liquid Discharge (ZLD) eco-dyeing to automated printing, embroidery, and AQL 1.5 certified CMT export lines.
             </p>
 
             {/* Core Capability Pills */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1 text-xs font-medium text-stone-700">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1 text-xs font-semibold text-stone-900">
               <div className="flex items-center space-x-2.5">
                 <CheckCircle2 className="w-4 h-4 text-[#93452E] shrink-0" />
                 <span>30 Mayer & Cie German Knitting Machines</span>
