@@ -31,46 +31,15 @@ export const Header: React.FC<HeaderProps> = ({ onOpenAuditModal, onOpenInquiryM
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 w-full transition-all duration-300">
-      {/* Top Pre-Header Utility & Certification Bar: Near the Menu Bar on ALL Screens */}
-      <div className="bg-[#261A13] text-stone-300 text-[10px] sm:text-[11px] px-3 sm:px-6 py-2 border-b border-stone-800/80">
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between gap-y-1.5 gap-x-4">
-          
-          {/* 3 Certifications: Manufacturing Base, Industry Experience, and Social Compliance Audit */}
-          <div className="w-full lg:w-auto flex flex-wrap lg:flex-nowrap items-center gap-x-4 gap-y-1 text-stone-200">
-            {/* 1. Manufacturing Base */}
-            <span className="flex items-center space-x-1.5">
-              <MapPin className="h-3.5 w-3.5 shrink-0 text-[#E08A5E]" />
-              <span className="text-stone-400 font-medium">Manufacturing Base:</span>
-              <span className="font-semibold text-white">Tiruppur, Tamil Nadu, India</span>
-            </span>
+      {/* Top Pre-Header Utility Bar (Desktop only) */}
+      <div className="bg-[#261A13] text-stone-300 text-[10px] px-4 py-1.5 border-b border-stone-800/80 hidden lg:block">
+        <div className="max-w-7xl mx-auto flex items-center justify-between">
+          <span className="font-mono text-stone-400 tracking-wide">
+            Tiruppur Knitted Garment Manufacturing & Apparel Export · Vertically Integrated Plant
+          </span>
 
-            <span className="text-stone-700 hidden lg:inline">|</span>
-
-            {/* 2. Industry Experience */}
-            <span className="flex items-center space-x-1.5">
-              <Award className="h-3.5 w-3.5 shrink-0 text-amber-400" />
-              <span className="text-stone-400 font-medium">Industry Experience:</span>
-              <span className="font-semibold text-white">18+ Years in Manufacturing</span>
-            </span>
-
-            <span className="text-stone-700 hidden lg:inline">|</span>
-
-            {/* 3. Compliance Audit */}
-            <button 
-              type="button"
-              onClick={onOpenAuditModal}
-              className="flex items-center space-x-1.5 text-stone-200 hover:text-white transition-colors cursor-pointer text-left"
-            >
-              <ShieldCheck className="h-3.5 w-3.5 shrink-0 text-emerald-400" />
-              <span className="text-stone-400 font-medium">Compliance Audit:</span>
-              <span className="font-semibold text-emerald-300 underline decoration-emerald-500/50 underline-offset-2">
-                SMETA 4-Pillar · LRQA
-              </span>
-            </button>
-          </div>
-
-          {/* Right Direct Merchandising Line (Large Screens) */}
-          <div className="hidden lg:flex shrink-0 items-center space-x-4 text-[10px]">
+          {/* Right Direct Merchandising Line */}
+          <div className="flex shrink-0 items-center space-x-4">
             <a 
               href={`mailto:${FACTORY_INFO.email}`} 
               className="flex items-center space-x-1.5 whitespace-nowrap text-stone-300 hover:text-white transition-colors"

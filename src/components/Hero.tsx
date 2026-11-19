@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Download, ChevronDown, CheckCircle2 } from 'lucide-react';
+import { ArrowRight, Download, ChevronDown, CheckCircle2, MapPin, Award, ShieldCheck } from 'lucide-react';
 import { FACTORY_INFO } from '../data/factoryData';
 
 interface HeroProps {
@@ -11,7 +11,74 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAuditModal, onOpenInquiryModal
   return (
     <section id="hero" className="relative bg-transparent border-b border-stone-200 overflow-hidden">
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 sm:pt-10 pb-16 lg:pb-24">
+      {/* Certifications Bar: Below Main Menu, Attached Bar with Bigger White Certificate Panel, Scrolls with Page */}
+      <div className="w-full bg-[#f3ecdf]/95 border-b border-stone-300/80 shadow-2xs">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 sm:py-3">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 sm:gap-4">
+            
+            {/* Attached Base & Experience credentials */}
+            <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-stone-800">
+              <div className="flex items-center space-x-2">
+                <div className="w-7 h-7 rounded-lg bg-[#93452E]/10 flex items-center justify-center text-[#93452E] shrink-0">
+                  <MapPin className="w-3.5 h-3.5" />
+                </div>
+                <div>
+                  <span className="text-[9px] uppercase font-bold tracking-wider text-stone-500 block leading-none">
+                    Manufacturing Base
+                  </span>
+                  <span className="font-bold text-stone-900 text-xs sm:text-sm mt-0.5 block">
+                    Tiruppur, Tamil Nadu, India
+                  </span>
+                </div>
+              </div>
+
+              <span className="hidden md:inline text-stone-300">|</span>
+
+              <div className="flex items-center space-x-2">
+                <div className="w-7 h-7 rounded-lg bg-amber-500/10 flex items-center justify-center text-amber-700 shrink-0">
+                  <Award className="w-3.5 h-3.5" />
+                </div>
+                <div>
+                  <span className="text-[9px] uppercase font-bold tracking-wider text-stone-500 block leading-none">
+                    Industry Experience
+                  </span>
+                  <span className="font-bold text-stone-900 text-xs sm:text-sm mt-0.5 block">
+                    18+ Years in Manufacturing
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Bigger Compliance Certificate Bar: In White Colour Like a Certificate */}
+            <button
+              type="button"
+              onClick={onOpenAuditModal}
+              className="group flex items-center gap-3 bg-white border-2 border-emerald-500/60 hover:border-emerald-600 px-3.5 py-2.5 sm:px-4 sm:py-3 rounded-xl shadow-xs hover:shadow-md transition-all cursor-pointer text-left self-stretch sm:self-auto"
+            >
+              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-emerald-50 border border-emerald-200 flex items-center justify-center text-emerald-700 shrink-0 group-hover:scale-105 transition-transform">
+                <ShieldCheck className="w-5 h-5 sm:w-6 sm:h-6" strokeWidth={2.2} />
+              </div>
+              <div className="min-w-0">
+                <div className="flex items-center space-x-1.5">
+                  <span className="text-[8.5px] font-extrabold uppercase tracking-widest text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200/80 leading-none">
+                    Social Compliance Audit
+                  </span>
+                  <span className="text-[9px] font-mono text-stone-500 hidden sm:inline">
+                    Site: {FACTORY_INFO.sedexSiteRef}
+                  </span>
+                </div>
+                <div className="text-xs sm:text-sm font-black text-stone-950 mt-1 flex items-center space-x-1.5">
+                  <span>SMETA 4-Pillar · LRQA Audited</span>
+                  <span className="text-[10px] text-emerald-700 font-bold hidden lg:inline">→ View Certificate</span>
+                </div>
+              </div>
+            </button>
+
+          </div>
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 sm:pt-12 pb-16 lg:pb-24">
         
         {/* Hero Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
